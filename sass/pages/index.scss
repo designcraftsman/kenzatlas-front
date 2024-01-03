@@ -1,19 +1,21 @@
+
+
 .heroSection{
     &__container{
         &__carousel{
             &__item{
                 position: relative;
-                max-height: 86vh;
+                max-height: 100vh;
                 &__img{
                     width: 100%;
                     height: auto;
-                    object-fit: contain;
+                    object-fit: cover;
                     filter: brightness(90%);
                 }
                 &__info{
                     display: block;
                     position: absolute;
-                    top: 35%;
+                    top: 42%;
                     left: 100px;
                     h3{
                         font-family: Inter;
@@ -37,6 +39,77 @@
                         color:$subheading;
                         text-align: start;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+
+.featuredProducts{
+    &__title{
+        text-align: center;
+        color: $text-secondary,sans-serif;
+        text-align: center;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__subTitle{
+        text-align: center;
+        color: $text-secondary;
+        text-align: center;
+        font-family: Inter,sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+
+.categoriesSection{
+    &__container{
+        &__item{
+            position: relative;
+            img{
+                object-fit: cover;
+                filter: brightness(90%);
+            }
+            &__info{
+                text-align: start;
+                position: absolute;
+                top: 150px;
+                right: 50px;
+                &__button{
+                    background-color: $style;
+                    font-family: Inter, sans-serif;
+                    color: $text-primary;
+                    font-size: 24px;
+                    border-radius: 10px;
+                    border-color: none;
+                    width: 150px;
+                    height: 70px;
+                    font-weight: 600;
+                }
+                &__h2{
+                    color: $text-primary;
+                    font-family: Inter;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                &__h3{
+                    color: $text-primary;
+                    font-family: Inter;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
                 }
             }
         }

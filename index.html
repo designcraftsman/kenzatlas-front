@@ -9,11 +9,13 @@
 </head>
 <body>
     <!--navbar debut-->
-    <nav class="navbar navbar-light bg-primary ">
+    <head>
+    <nav class="navbar navbar-light bg-primary fixed-top  ">
         <div class="container-fluid navbar__container">
             <i class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon"></i>
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
+                <!--Logo image-->
+                <img src="assets/img/logo/svg_white.svg" alt=""  width="150" class="d-inline-block align-text-top">
             </a>
             <div class="navbar__container__options">
                 <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons" style="color: #ffffff;"></i>
@@ -34,7 +36,7 @@
             </div>
             <div class="carousel-inner heroSection__container__carousel">
               <div class="carousel-item active heroSection__container__carousel__item" data-bs-interval="10000">
-                <img src="assets/img/homePage/heroSection/hero.jpg" class="d-block heroSection__container__carousel__item__img" alt="...">
+                <img src="assets/img/homePage/heroSection/hero.jpg" class="heroSection__container__carousel__item__img" alt="...">
                 <div class=" heroSection__container__carousel__item__info">
                   <h3>ÉLÉMENTS ESSENTIELS</h3>
                   <h2>First slide label</h2>
@@ -69,6 +71,87 @@
             </div>
           </div>
     </section>
+
+    <!--hero section end-->
+
+
+    <!--featured products section start -->
+    <section class="container featuredProducts mt-5 ">
+      <h2 class="featuredProducts__title">Nos produits vedettes</h2>
+      <h4 class="featuredProducts__subTitle">Obtenez la peau que vous désirez</h4>
+      <div class="row d-flex justify-content-center align-items-center  mt-5  ">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card border-0 " style="width: 18rem;">
+            <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+              <p class="card-text text-center m-1">Gel Douch</p>
+              <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card border-0 " style="width: 18rem;">
+            <img src="assets/img/homePage/featuredProducts/product2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+              <p class="card-text text-center m-1">Gel Douch</p>
+              <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card border-0 " style="width: 18rem;">
+            <img src="assets/img/homePage/featuredProducts/product3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+              <p class="card-text text-center m-1">Gel Douch</p>
+              <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="card border-0 " style="width: 18rem;">
+            <img src="assets/img/homePage/featuredProducts/product4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+              <p class="card-text text-center m-1">Gel Douch</p>
+              <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i> <span>52 Reviews</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--featured products section end -->
+
+
+    <!--categories section start-->
+
+    <section class="container-fluid text-center mt-5 categoriesSection">
+      <div class="row categoriesSection__container">
+        <div class="col-lg-6 col-12   p-0 categoriesSection__container__item">
+          <img src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100" alt="">
+          <div class="categoriesSection__container__item__info text-secondary ">
+            <h3 class="categoriesSection__container__item__info__h3">Meilleur de</h3>
+            <h2 class="categoriesSection__container__item__info__h2">SOIN DES <br> CHEVEUX</h2>
+            <button class="categoriesSection__container__item__info__button">Explorer</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12  p-0  categoriesSection__container__item">
+          <img src="assets/img/homePage/categoriesSection/skincare.jpg" class="w-100 h-100" alt="">
+          <div class="categoriesSection__container__item__info text-secondary ">
+            <h3 class="categoriesSection__container__item__info__h3">Meilleur de</h3>
+            <h2 class="categoriesSection__container__item__info__h2">SOIN DE <br> LA PEAU</h2>
+            <button class="categoriesSection__container__item__info__button">Explorer</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
