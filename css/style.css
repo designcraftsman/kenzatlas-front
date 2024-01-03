@@ -7,6 +7,7 @@
   font-size: 24px;
   border-radius: 10px;
   border-color: none;
+  border: none;
   width: 250px;
   height: 80px;
   font-weight: 600;
@@ -102,6 +103,7 @@
   border-radius: 10px;
   border-color: none;
   width: 150px;
+  border: none;
   height: 70px;
   font-weight: 600;
 }
