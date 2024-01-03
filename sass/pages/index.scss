@@ -1,0 +1,44 @@
+.heroSection{
+    &__container{
+        &__carousel{
+            &__item{
+                position: relative;
+                max-height: 86vh;
+                &__img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    filter: brightness(90%);
+                }
+                &__info{
+                    display: block;
+                    position: absolute;
+                    top: 35%;
+                    left: 100px;
+                    h3{
+                        font-family: Inter;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        color:$text-primary;
+                        line-height: normal
+                    }
+                    h2{ 
+                        font-family: Inter , sans-serif;
+                        font-weight: 700;
+                        font-size: 40px;
+                        color:$text-primary;
+                        text-align: start;
+                    }
+                    p{
+                        font-family: Inter , sans-serif;
+                        font-weight: 400;
+                        font-size: 24px;
+                        color:$subheading;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.navbar{
+    &__container{
+        &__icon{
+            color:$icons;
+            margin: 0 20px;
+        }
+        &__options{
+            &__icons{
+                color:$icons;
+                margin: 0 10px;
+            }
+        }
+    }
+}
