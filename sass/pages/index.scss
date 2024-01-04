@@ -6,14 +6,19 @@
             height: 90vh;
             &__item{
                 position: relative;
+                &__img{
+                    filter: brightness(80%);
+                    object-fit: cover;
+                }
                 &__info{
                     display: block;
                     position: absolute;
-                    top: 30%;
-                    left: 100px;
+                    top:15%;
+                    margin: 100px;
+                    width: 40%;
                     h3{
                         font-family: Inter;
-                        font-size: 1.8rem;
+                        
                         font-style: normal;
                         font-weight: 600;
                         color:$text-primary;
@@ -22,14 +27,13 @@
                     h2{ 
                         font-family: Inter , sans-serif;
                         font-weight: 700;
-                        font-size: 3rem;
+                       
                         color:$text-primary;
                         text-align: start;
                     }
                     p{
                         font-family: Inter , sans-serif;
                         font-weight: 400;
-                        font-size: 1.5rem;
                         color:$subheading;
                         text-align: start;
                     }
