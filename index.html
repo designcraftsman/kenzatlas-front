@@ -10,24 +10,25 @@
 <body>
     <!--navbar debut-->
     <head>
-    <nav class="navbar navbar-light bg-primary sticky-top     m-0  p-0 ">
+    <nav class="navbar navbar-light bg-primary sticky-top   m-0  p-0 ">
         <div class="container-fluid navbar__container">
-            <i class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon"></i>
-            <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon order-lg-0 order-md-1 order-1"></i>
+            <a class="navbar-brand order-lg-1 order-md-0 order-0" href="#">
                 <!--Logo image-->
                 <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
             </a>
-            <div class="navbar__container__options">
+            <div class="navbar__container__options order-lg-2 d-none d-lg-inline-block ">
                 <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons" ></i>
                 <i class="fa-solid fa-user fa-xl navbar__container__options__icons" ></i>
                 <i class="fa-solid fa-cart-shopping fa-xl navbar__container__options__icons" ></i>
             </div>
-            </div>
+            
+        </div>
     </nav>
     <!--navbar end-->
 
     <!--hero section debut-->
-    <section class="heroSection  ">
+    <section class="heroSection">
         <div id="carouselExampleDark" class="carousel carousel-dark slide heroSection__container  " data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -35,31 +36,31 @@
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner heroSection__container__carousel">
-              <div class="carousel-item active heroSection__container__carousel__item" data-bs-interval="10000">
-                <img src="assets/img/homePage/heroSection/hero2.jpg"  class="heroSection__container__carousel__item__img h-100   w-100 " alt="...">
-                <div class=" heroSection__container__carousel__item__info">
-                  <h3 class="fs-3">ÉLÉMENTS ESSENTIELS</h3>
-                  <h2 class="fs-1 ">Une beauté inspirée de la vraie vie</h2>
-                  <p class="fs-5">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
-                  <button type="button" class="btn btn-primary btn-lg text-secondary ">Acheter Maintenant</button>
+              <div class="carousel-item h-100  active heroSection__container__carousel__item" data-bs-interval="10000">
+                <img src="assets/img/homePage/heroSection/hero2.jpg"  class="d-block heroSection__container__carousel__item__img " alt="...">
+                <div class=" heroSection__container__carousel__item__info    ">
+                  <h3 class="fs-4 fw-light">ÉLÉMENTS ESSENTIELS</h3>
+                  <h2 class="fs-2  fw-bold mt-3">Une beauté inspirée de la vraie vie</h2>
+                  <p class="fs-6 mt-3">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                  <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 ">Acheter Maintenant</button>
                 </div>
               </div>
-              <div class="carousel-item heroSection__container__carousel__item" data-bs-interval="2000">
-                <img src="assets/img/homePage/heroSection/hero2.jpg" class="d-block heroSection__container__carousel__item__img w-100 h-100   " alt="...">
+              <div class="carousel-item  h-100  heroSection__container__carousel__item" data-bs-interval="2000">
+                <img src="assets/img/homePage/heroSection/hero2.jpg" class="d-block heroSection__container__carousel__item__img  " alt="...">
                 <div class="heroSection__container__carousel__item__info">
-                    <h3 class="fs-3">ÉLÉMENTS ESSENTIELS</h3>
+                    <h3 class="fs-3 fw-light ">ÉLÉMENTS ESSENTIELS</h3>
                     <h2 class="fs-1">First slide label</h2>
                     <p class="fs-5">Some representative placeholder content for the first slide.</p>
-                    <button type="button" class="btn btn-primary btn-lg text-secondary ">Acheter Maintenant</button>
+                    <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 ">Acheter Maintenant</button>
                 </div>
-              </div>
-              <div class="carousel-item heroSection__container__carousel__item">
-                <img src="assets/img/homePage/heroSection/hero2.jpg" class="d-block  heroSection__container__carousel__item__img w-100 img-fluid  h-100 " alt="...">
+              </div> 
+              <div class="carousel-item  h-100 heroSection__container__carousel__item">
+                <img src="assets/img/homePage/heroSection/hero2.jpg" class="d-block  heroSection__container__carousel__item__img  " alt="...">
                 <div class="heroSection__container__carousel__item__info">
                     <h3>ÉLÉMENTS ESSENTIELS</h3>
                     <h2>First slide label</h2>
                     <p>Some representative placeholder content for the first slide.</p>
-                    <button type="button" class="btn btn-primary btn-lg text-secondary ">Acheter Maintenant</button>
+                    <button type="button" class="btn btn-primary btn-lg text-secondary  fs-5 ">Acheter Maintenant</button>
                 </div>
               </div>
             </div>
@@ -71,11 +72,11 @@
 
     <!--featured products section start -->
     <section class="container featuredProducts mt-5 ">
-      <h2 class="featuredProducts__title">Nos produits vedettes</h2>
-      <h4 class="featuredProducts__subTitle">Obtenez la peau que vous désirez</h4>
-      <div class="row d-flex justify-content-center align-items-center  mt-5  ">
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card border-0 " style="width: 18rem;">
+      <h2 class="featuredProducts__title fs-1 text-center ">Nos produits vedettes</h2>
+      <h4 class="featuredProducts__subTitle fs-4 fw-lighter text-center  ">Obtenez la peau que vous désirez</h4>
+      <div class="row d-flex justify-content-center align-content-center  mt-5  ">
+        <div class="col-lg-3 col-md-6 col-12 mt-2">
+          <div class="card border-0  m-auto " style="width: 18rem;">
             <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
@@ -84,8 +85,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card border-0 " style="width: 18rem;">
+        <div class="col-lg-3 col-md-6 col-12 mt-2">
+          <div class="card border-0 m-auto " style="width: 18rem;">
             <img src="assets/img/homePage/featuredProducts/product2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
@@ -94,8 +95,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card border-0 " style="width: 18rem;">
+        <div class="col-lg-3 col-md-6 col-12 mt-2">
+          <div class="card border-0 m-auto " style="width: 18rem;">
             <img src="assets/img/homePage/featuredProducts/product3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
@@ -104,8 +105,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12">
-          <div class="card border-0 " style="width: 18rem;">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 ">
+          <div class="card border-0 m-auto " style="width: 18rem;">
             <img src="assets/img/homePage/featuredProducts/product4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
@@ -124,20 +125,20 @@
 
     <section class="container-fluid text-center mt-5 categoriesSection">
       <div class="row categoriesSection__container">
-        <div class="col-lg-6 col-12   p-0 categoriesSection__container__item">
-          <img src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100" alt="">
+        <div class="col-lg-6 col-12   p-0 categoriesSection__container__item mt-5">
+          <img src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 " alt="">
           <div class="categoriesSection__container__item__info text-secondary ">
-            <h3 class="categoriesSection__container__item__info__h3">Meilleur de</h3>
-            <h2 class="categoriesSection__container__item__info__h2">SOIN DES <br> CHEVEUX</h2>
-            <button class="categoriesSection__container__item__info__button">Explorer</button>
+            <h3 class="categoriesSection__container__item__info__h3 display-6 ">Meilleur de</h3>
+            <h2 class="categoriesSection__container__item__info__h2 display-5 fw-bold ">SOIN DES <br> CHEVEUX</h2>
+            <button type="button" class="btn btn-primary btn-lg text-secondary fw-bold  ">Explorer</button>
           </div>
         </div>
-        <div class="col-lg-6 col-12  p-0  categoriesSection__container__item">
+        <div class="col-lg-6 col-12  p-0  categoriesSection__container__item mt-5">
           <img src="assets/img/homePage/categoriesSection/skincare.jpg" class="w-100 h-100" alt="">
           <div class="categoriesSection__container__item__info text-secondary ">
-            <h3 class="categoriesSection__container__item__info__h3">Meilleur de</h3>
-            <h2 class="categoriesSection__container__item__info__h2">SOIN DE <br> LA PEAU</h2>
-            <button class="categoriesSection__container__item__info__button">Explorer</button>
+            <h3 class="categoriesSection__container__item__info__h3 display-6 fw-light ">Meilleur de</h3>
+            <h2 class="categoriesSection__container__item__info__h2 display-5 fw-bold">SOIN DE <br> LA PEAU</h2>
+            <button type="button" class="btn btn-primary btn-lg text-secondary fw-bold  ">Explorer</button>
           </div>
         </div>
       </div>
@@ -148,21 +149,21 @@
 
     <!--info section start-->
     <section class="container  infoSection p-5 " >
-      <div class="row text-center infoSection__container d-flex justify-content-evenly flex-wrap  align-items-center p-5  ">
-        <div class="col-lg-3 col-md-6 col-12 infoSection__container__item  mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-truck fa-2xl"></i></div>
-          <h2 class="infoSection__container__item__title fw-bold m-4">Livraison gratuite</h2>
-          <h3 class="infoSection__container__item__subTitle fw-light ">Livraison gratuite pour les commandes de plus de 130 $</h3>
+      <div class="row text-center infoSection__container  p-5  d-flex flex-wrap justify-content-center ">
+        <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
+          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-truck fa-2xl "></i></div>
+          <h2 class="infoSection__container__item__title fw-bold m-4 fs-4 ">Livraison gratuite</h2>
+          <h3 class="infoSection__container__item__subTitle fw-light fs-5  ">Livraison gratuite pour les commandes de plus de 130 $</h3>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 infoSection__container__item  mt-5 ">
+        <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
           <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-arrow-right-arrow-left fa-2xl"></i></div>
-          <h2 class="infoSection__container__item__title fw-bold m-4 ">Échange</h2>
-          <h3 class="infoSection__container__item__subTitle fw-light ">Sous 30 jours pour un échange</h3>
+          <h2 class="infoSection__container__item__title fw-bold m-4 fs-4  ">Échange</h2>
+          <h3 class="infoSection__container__item__subTitle fw-light fs-5">Sous 30 jours pour un échange</h3>
         </div>
-        <div class="col-lg-3 col-md-6 col-12  infoSection__container__item   mt-5 ">
+        <div class="col-lg-4 col-md-6 col-12  infoSection__container__item   mt-5 ">
           <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-phone fa-2xl"></i></div>
-          <h2 class="infoSection__container__item__title fw-bold m-4">Support en ligne</h2>
-          <h3 class="infoSection__container__item__subTitle fw-light ">24 heures sur 24, 7 jours sur 7</h3>
+          <h2 class="infoSection__container__item__title fw-bold m-4 fs-4">Support en ligne</h2>
+          <h3 class="infoSection__container__item__subTitle fw-light fs-5">24 heures sur 24, 7 jours sur 7</h3>
         </div>
       </div>
     </section>
@@ -176,20 +177,20 @@
     <section class="clientReviewSection container-fluid bg-primary p-3">
       <div class="container mt-5 p-5 clientReviewSection">
         <div class="row clientReviewSection__container">
-          <div class="col-4 clientReviewSection__container__text">
+          <div class="col-4 clientReviewSection__container__text w-100 ">
             <div class="clientReviewSection__container__text__icon m-4 "><img src="assets/img/homePage/clientReviewsSection/clientsIcon.svg" alt=""></div>
-            <h2 class="clientReviewSection__container__text__title m-4">Avis client</h2> 
-            <h3 class="clientReviewSection__container__text__subTitle m-4">Ce que nos clients disent de nos produits</h3> 
+            <h2 class="clientReviewSection__container__text__title m-4 fs-2 fw-bold">Avis client</h2> 
+            <h3 class="clientReviewSection__container__text__subTitle m-4 fs-3 fw-light ">Ce que nos clients disent de nos produits</h3> 
           </div>
-          <div class="col-8 clientReviewSection__container__screenshots">
+          <div class="col-lg-8 col-12 clientReviewSection__container__screenshots p-5">
             <div class="row">
-              <div class="col-4  ">
+              <div class="col-lg-4 col-12 ">
                 <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="w-100 "  alt="">
               </div>
-              <div class="col-4  ">
+              <div class="col-lg-4 d-lg-inline-block  d-none">
                 <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="w-100 "  alt="">
               </div>
-              <div class="col-4  ">
+              <div class="col-lg-4 d-lg-inline-block   d-none ">
                 <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="w-100 "  alt="">
               </div>
             </div>
@@ -208,12 +209,12 @@
 
     <section class="container-fluid p-5 blogSection">
       <div class="text-center blogSection__textContainer">
-        <h2 class="blogSection__textContainer__title">De notre blog</h2>
-        <h3 class="blogSection__textContainer__subTitle">Découvrez nos dernières informations</h3>
+        <h2 class="blogSection__textContainer__title fs-2 fw-bold">De notre blog</h2>
+        <h3 class="blogSection__textContainer__subTitle fs-3 fw-lighter ">Découvrez nos dernières informations</h3>
       </div>
-      <div class="row d-flex justify-content-evenly align-content-center p-3 ">
-        <div class="col-3 m-3 blogSection__container">
-          <div class="card border-0 blogSection__container__item" style="width: 25rem;">
+      <div class="row  mt-5">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 blogSection__container m-auto ">
+          <div class="card border-0 m-auto blogSection__container__item w-100" >
             <img src="assets/img/homePage/blogSection/article1.jpg" class="card-img-top   object-fit-cover" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -222,8 +223,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3 m-3  ">
-          <div class="card border-0 blogSection__container__item " style="width: 25rem; ">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 m-auto  ">
+          <div class="card border-0 m-auto blogSection__container__item   w-100" >
             <img src="assets/img/homePage/blogSection/article2.jpg" class="card-img-top  object-fit-cover " alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -232,8 +233,8 @@
             </div>
           </div>
         </div>
-        <div class="col-3 m-3">
-          <div class="card border-0 blogSection__container__item " style="width: 25rem;">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 m-auto ">
+          <div class="card border-0 m-auto blogSection__container__item w-100" >
             <img src="assets/img/homePage/blogSection/article3.jpg" class="card-img-top object-fit-cover" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -253,15 +254,15 @@
     <footer class="container-fluid  bg-dark"> 
       <div class="container p-5">
         <div class="row text-primary d-flex justify-content-between  ">
-          <div class="col-2  ">
+          <div class="col-lg-2 col-md-4 col-12  ">
             <img src="assets/img/logo/svg_yellow (1).svg"  class="d-block w-100  " alt="">
-            <ul class="list-unstyled text-center text-secondary  mt-3 ">
+            <ul class="list-unstyled text-center text-secondary  mt-4 ">
               <li class="d-inline m-2 "><i class="fa-brands fa-facebook fa-lg"></i></li>
               <li class="d-inline m-2"><i class="fa-brands fa-instagram fa-lg"></i></li>
               <li class="d-inline m-2"><i class="fa-brands fa-twitter fa-lg"></i></li>
             </ul>
           </div>
-          <div class="col-2  ">
+          <div class="col-lg-2 col-md-4 col-12  text-lg-start text-md-start text-center mt-3 ">
             <h4>A propos</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li>Notre histoire</li>
@@ -269,7 +270,7 @@
                 <li>Contact</li>
               </ul>
           </div>
-          <div class="col-2 ">
+          <div class="col-lg-2 col-md-4 col-12 col-2 text-lg-start text-md-start text-center mt-3">
             <h4>Aide</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li>FAQ</li>
@@ -278,7 +279,7 @@
               </ul>
           </div>
         </div>
-        <hr class="border-primary border-3  text-center ">
+        <hr class="border-primary border-3  text-center mt-3">
         <p class="text-center text-secondary ">© 2023 DesignCraftsMan Tous droits réservés.</p>
       </div>
     </footer>
