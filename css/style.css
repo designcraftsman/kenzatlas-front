@@ -24,18 +24,17 @@
 
 .heroSection__container__carousel__item {
   position: relative;
-  max-height: 100vh;
 }
 .heroSection__container__carousel__item__img {
+  filter: brightness(90%);
+  object-fit: cover;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  filter: brightness(90%);
 }
 .heroSection__container__carousel__item__info {
   display: block;
   position: absolute;
-  top: 42%;
+  top: 30%;
   left: 100px;
 }
 .heroSection__container__carousel__item__info h3, .heroSection__container__carousel__item__info .h3 {
@@ -122,6 +121,76 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.infoSection__container__item {
+  font-family: Inter, sans-serif;
+}
+.infoSection__container__item__icon {
+  font-size: 40px;
+  color: #94863D;
+}
+.infoSection__container__item__title {
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+}
+.infoSection__container__item__subTitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.clientReviewSection {
+  position: relative;
+}
+.clientReviewSection__container__text {
+  color: #FFFFFF;
+}
+.clientReviewSection__container__text__title {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.clientReviewSection__container__text__subTitle {
+  color: #E3DDDD;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.clientReviewSection__container__screenshots__button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.clientReviewSection__container__screenshots__button__icon {
+  color: #FFFFFF;
+}
+
+.blogSection__textContainer__title {
+  color: #000000, sans-serif;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.blogSection__textContainer__subTitle {
+  color: #000000;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.blogSection__container__item img {
+  height: 300px;
 }
 
 .active {

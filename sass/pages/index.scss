@@ -5,17 +5,16 @@
         &__carousel{
             &__item{
                 position: relative;
-                max-height: 100vh;
                 &__img{
+                    filter: brightness(90%);
+                    object-fit: cover;
                     width: 100%;
                     height: auto;
-                    object-fit: cover;
-                    filter: brightness(90%);
                 }
                 &__info{
                     display: block;
                     position: absolute;
-                    top: 42%;
+                    top: 30%;
                     left: 100px;
                     h3{
                         font-family: Inter;
@@ -47,6 +46,9 @@
 
 
 
+
+
+
 .featuredProducts{
     &__title{
         text-align: center;
@@ -69,6 +71,9 @@
         line-height: normal;
     }
 }
+
+
+
 
 
 .categoriesSection{
@@ -112,6 +117,97 @@
                     font-weight: 300;
                     line-height: normal;
                 }
+            }
+        }
+    }
+}
+
+
+
+.infoSection{
+    &__container{
+        &__item{
+            font-family: Inter, sans-serif;
+            &__icon{
+                font-size: 40px;
+                color:$style;
+            }
+            &__title{
+                font-size: 24px;
+                font-style: normal;
+                line-height: normal;
+            }
+            &__subTitle{
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+
+.clientReviewSection{
+    position: relative;
+    &__container{
+        &__text{
+                color: $text-primary;
+               &__title{
+                color: $text-primary;
+                font-family: Inter;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+               }
+               &__subTitle{
+                color: $subheading;
+                font-family: Inter;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+               }
+        }
+        &__screenshots{
+            &__button{
+                position: absolute;
+                right: 0;
+                top:50%;
+                &__icon{
+                    color:$icons;
+                }
+            }
+        }
+    }
+}
+
+
+
+.blogSection{
+    &__textContainer{
+        &__title{
+            color: $text-secondary,sans-serif;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        &__subTitle{
+            color: $text-secondary;
+            font-family: Inter,sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__container{
+        &__item{
+            img{
+                height: 300px;
             }
         }
     }
