@@ -2,5 +2,5 @@ $primary:$style;
 $secondary : $text-primary;
 
 .active{
-    color: $style;
+    border-color: $primary;
 }

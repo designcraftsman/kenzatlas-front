@@ -22,14 +22,11 @@
   margin: 0 10px;
 }
 
+.heroSection__container__carousel {
+  height: 90vh;
+}
 .heroSection__container__carousel__item {
   position: relative;
-}
-.heroSection__container__carousel__item__img {
-  filter: brightness(90%);
-  object-fit: cover;
-  width: 100%;
-  height: auto;
 }
 .heroSection__container__carousel__item__info {
   display: block;
@@ -39,7 +36,7 @@
 }
 .heroSection__container__carousel__item__info h3, .heroSection__container__carousel__item__info .h3 {
   font-family: Inter;
-  font-size: 24px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;
   color: #FFFFFF;
@@ -48,14 +45,14 @@
 .heroSection__container__carousel__item__info h2, .heroSection__container__carousel__item__info .h2 {
   font-family: Inter, sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 3rem;
   color: #FFFFFF;
   text-align: start;
 }
 .heroSection__container__carousel__item__info p {
   font-family: Inter, sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #E3DDDD;
   text-align: start;
 }
@@ -194,7 +191,7 @@
 }
 
 .active {
-  color: #94863D;
+  border-color: #94863D;
 }
 
 /*!
