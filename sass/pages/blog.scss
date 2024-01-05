@@ -1,0 +1,14 @@
+.blog{
+    font-family: Inter,sans-serif;
+    &__container{
+        &__aside{
+            &__recentPosts{
+                &__img{
+                    img{
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

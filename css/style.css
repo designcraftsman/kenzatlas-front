@@ -113,6 +113,13 @@
   height: 300px;
 }
 
+.blog {
+  font-family: Inter, sans-serif;
+}
+.blog__container__aside__recentPosts__img img {
+  height: 100px;
+}
+
 .shop {
   font-family: Inter, sans-serif;
 }
