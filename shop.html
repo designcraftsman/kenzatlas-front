@@ -27,114 +27,114 @@
     </nav>
     <!--navbar end-->
 
-    <div class="container p-3 shop ">
-        <!--filter and sort part start-->
-        <div class="row w-100  shop__container mt-2 ">
-            <div class="col-lg-2 col-12 order-lg-0 order-1 m-0">
-              <button class="  h-100 w-100  text-secondary btn btn-primary fw-bold fs-4   "><span ><i class="fa-solid fa-list me-1"></i></span> Filtrer</button>
+    <!--filter and product list section start-->
+    <div class="container shop">
+      <div class="row shop__container">
+        <div class="  col-3 d-lg-block d-none  p-2  mt-5 shop__container__filterBar">
+          <h2 class=" fs-4 fw-bold ">Catégorie</h2>
+          <ul class="list-unstyled  mt-3 ">
+            <li class="fw-light fs-6 m-2">Soin corps</li>
+            <li class="fw-light fs-6 m-2">Visage</li>
+            <li class="fw-light fs-6 m-2">Cheveux</li>
+          </ul>
+          <h2 class=" fs-4 fw-bold ">Prix</h2>
+          <ul class="list-unstyled  mt-3 ">
+            <li class="fw-light fs-6 m-2 fw-lighter ">20Ddh - 50dh</li>
+            <li class="fw-light fs-6 m-2 fw-lighter">50dh - 100dh</li>
+            <li class="fw-light fs-6 m-2 fw-lighter">100dh - 200dh</li>
+            <li class="fw-light fs-6 m-2 fw-lighter">+200dh</li>
+          </ul>
+          <button class="btn btn-primary border-0 w-75  btn-lg border-black text-secondary fw-bold "><i class="fa-solid fa-sliders"></i> Filter</button>
+        </div>
+
+
+
+        <div class="col-lg-9 col-md-12 shop__container__products mt-5 ">
+
+          <div class="row  shop__container__products__list ">
+            <div class="shop__container__products__results col-12 mb-3 d-flex justify-content-between flex-wrap  align-items-center ps-5 pe-5 ">
+              <p class="fs-5 m-0   fw-light shop__container__products__results__number "><span class="fw-bold text-dark">95</span> Produits disponibles</p>
+              <select class="p-2 pe-4 rounded " aria-label="Default select example">
+                <option selected>Trier par : <span class="fw-bold">Défaut</span></option>
+                <option value="1">Trier par : <span class="fw-bold">Les plus demandés</span></option>
+                <option value="2">Trier par : <span class="fw-bold">prix plus bas</span></option>
+                <option value="3">Trier par : <span class="fw-bold">prix plus haut</span></option>
+              </select>
+              <button class="btn btn-primary text-secondary   w-100 d-lg-none mt-3 fw-bold "><i class="fa-solid fa-sliders"></i> Filter</button>
             </div>
-            <div class="order-lg-1 order-0  shop__container__sort  m-lg-0 m-2 col-lg-10 col-12 bg-dark  rounded d-flex justify-content-between  flex-wrap  align-items-center p-2 "> 
-                <h2 class="fw-light text-secondary fs-5  text-start   ps-2"><span class="fw-bold text-white">95</span> Produits disponibles</h2>
-                <div class=" shop__container__sort__select ">
-                    <span for="trie " class="text-secondary fw-light fs-5 ">Trier par : </span>
-                    <select name="trie" id="select" class="form-select d-inline-block  shop__container__sort__select__options  text-white   fs-5 bg-transparent d-inline fw-bold  " aria-label="Default select example">
-                        <option class="bg-dark  " selected>les plus demandés</option>
-                        <option class="bg-dark  " value="1">les plus récents</option>
-                        <option class="bg-dark " value="2">prix croissant</option>
-                        <option class="bg-dark " value="3">prix decroissant</option>
-                    </select>
+            <div class="col-lg-6 col-md-6 col-12 mt-2 shop__container__products__list__item">
+              <div class="card border-0  m-auto w-100" >
+                <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__item__img object-fit-cover " alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+                  <p class="card-text text-center m-1">Gel Douch</p>
+                  <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
-            </div>  
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mt-2 shop__container__products__list__item">
+              <div class="card border-0  m-auto w-100" >
+                <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__item__img object-fit-cover " alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+                  <p class="card-text text-center m-1">Gel Douch</p>
+                  <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mt-2 shop__container__products__list__item">
+              <div class="card border-0  m-auto w-100" >
+                <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__item__img object-fit-cover " alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+                  <p class="card-text text-center m-1">Gel Douch</p>
+                  <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mt-2 shop__container__products__list__item">
+              <div class="card border-0  m-auto w-100" >
+                <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__item__img object-fit-cover " alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+                  <p class="card-text text-center m-1">Gel Douch</p>
+                  <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 mt-2 shop__container__products__list__item">
+              <div class="card border-0  m-auto w-100" >
+                <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__item__img object-fit-cover " alt="...">
+                <div class="card-body">
+                  <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
+                  <p class="card-text text-center m-1">Gel Douch</p>
+                  <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-12 container d-flex justify-content-center p-5">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-lg  ">
+                <li class="page-item"><a class="page-link " href="#"> << </a></li>
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"> >> </a></li>
+                </ul>
+            </nav>
         </div>
-        <!--filter and sort part end-->
-
-        <!-- products list part start-->
-        <div class="row d-flex justify-content-center align-content-center  mt-2  w-100 m-auto ">
-            <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100  m-auto " >
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100 m-auto " >
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100 m-auto " >
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100 m-auto " style="width: 18rem;">
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100 m-auto " style="width: 18rem;">
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100 m-auto " style="width: 18rem;">
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-2">
-                <div class="card border-0 w-100 m-auto " style="width: 18rem;">
-                  <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="card-text text-center m-1 fw-bolder">25.00dh</p>
-                    <p class="card-text text-center m-1">Gel Douch</p>
-                    <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
-                  </div>
-                </div>
-              </div>
         </div>
-        <!--products list part end-->
-    </div>
-    <div class="container d-flex justify-content-center p-5">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination pagination-lg  ">
-            <li class="page-item"><a class="page-link " href="#"> << </a></li>
-            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#"> >> </a></li>
-            </ul>
-        </nav>
+      </div>
     </div>
 
+
+
+    <!--pagination start-->
+
+
+    <!--pagination end-->
 
 
      <!-- footer start-->

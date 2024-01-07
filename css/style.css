@@ -144,15 +144,14 @@
 .shop {
   font-family: Inter, sans-serif;
 }
-.shop__container__sort__select {
-  width: 50%;
+.shop__container__filterBar ul li {
+  color: #6E6E6E;
 }
-.shop__container__sort__select__options {
-  box-sizing: border-box;
+.shop__container__products__results__number {
+  color: #6E6E6E;
 }
-
-#select {
-  width: 75%;
+.shop__container__products__list__item__img {
+  height: 450px;
 }
 
 @media screen and (max-width: 1000px) {

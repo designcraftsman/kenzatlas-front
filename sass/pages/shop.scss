@@ -1,16 +1,26 @@
 .shop{
     font-family: Inter ,sans-serif;
     &__container{
-        &__sort{
-            &__select{
-                width: 50%;
-                &__options{
-                    box-sizing: border-box;
+        &__filterBar{
+            ul{
+                li{
+                    color:$options;
                 }
             }
         }
+        &__products{
+            &__results{
+                &__number{
+                    color: $options;
+                }
+            }
+            &__list{
+                &__item{
+                &__img{
+                    height: 450px;
+                }
+            }
+            }
+        }
     }
-}
-#select{
-    width: 75%;
 }
