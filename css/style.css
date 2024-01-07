@@ -61,7 +61,7 @@
 .categoriesSection__container__item img {
   object-fit: cover;
   height: auto;
-  filter: brightness(80%);
+  filter: brightness(100%);
 }
 .categoriesSection__container__item__info {
   text-align: start;
@@ -154,17 +154,6 @@
   height: 450px;
 }
 
-@media screen and (max-width: 1000px) {
-  .shop__container__sort__select {
-    width: 100%;
-  }
-  .shop__container__sort__select__options {
-    width: 100%;
-  }
-  #select {
-    width: 100%;
-  }
-}
 .active {
   border-color: #94863D;
 }
