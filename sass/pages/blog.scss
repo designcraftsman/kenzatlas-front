@@ -1,11 +1,42 @@
 .blog{
     font-family: Inter,sans-serif;
     &__container{
+        &__posts{
+            &__post{
+                &__img{
+                    img{
+                        height: 300px;
+                    }
+                }
+                &__text{
+                    &__title{
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                    &__body{
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
         &__aside{
             &__recentPosts{
                 &__img{
                     img{
-                        height: 100px;
+                        height: 80px;
+                    }
+                }
+                &__text{
+                    &__title{
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
                     }
                 }
             }

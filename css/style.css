@@ -116,8 +116,29 @@
 .blog {
   font-family: Inter, sans-serif;
 }
+.blog__container__posts__post__img img {
+  height: 300px;
+}
+.blog__container__posts__post__text__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog__container__posts__post__text__body {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .blog__container__aside__recentPosts__img img {
-  height: 100px;
+  height: 80px;
+}
+.blog__container__aside__recentPosts__text__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .shop {
