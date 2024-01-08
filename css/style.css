@@ -168,6 +168,10 @@
   height: 600px;
 }
 
+.contactContainer {
+  font-family: Inter, sans-serif;
+}
+
 .active {
   border-color: #94863D;
 }
