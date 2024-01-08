@@ -1,0 +1,10 @@
+.productPage{
+    font-family: Inter, sans-serif;
+    &__container{
+        &__imgContainer{
+            &__img{
+                height:600px;
+            }
+        }
+    }
+}

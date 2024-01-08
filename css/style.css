@@ -161,6 +161,13 @@
   height: 450px;
 }
 
+.productPage {
+  font-family: Inter, sans-serif;
+}
+.productPage__container__imgContainer__img {
+  height: 600px;
+}
+
 .active {
   border-color: #94863D;
 }
