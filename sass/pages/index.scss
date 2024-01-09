@@ -1,6 +1,7 @@
 
 
 .heroSection{ 
+    font-family: Inter,sans-serif;
     &__container{
         &__carousel{
             height: 90vh;
@@ -20,15 +21,14 @@
                     width: 60%;
                     text-align: start;
                     h3{
-                        font-family: Inter;
                         color:$text-primary;
                     }
                     h2{ 
-                        font-family: Inter , sans-serif; 
+                        
                         color:$text-primary;
                     }
                     p{
-                        font-family: Inter , sans-serif;
+                       
                         color:$subheading;
                     }
                 }
@@ -73,10 +73,6 @@
     &__container{
         &__item{
             font-family: Inter, sans-serif;
-            &__icon{
-                font-size: 30px;
-                color:$style;
-            }
         }
     }
 }

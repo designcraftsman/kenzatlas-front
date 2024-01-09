@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body >
     <!--navbar debut-->
     <nav class="navbar navbar-light bg-primary sticky-top   m-0  p-0 ">
         <div class="container-fluid navbar__container">
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"> <i  class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon "></i></button>
+          <button class="btn btn-primary m-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+             <i  class="fa-solid fa-bars-staggered fa-xl navbar__container__icon "></i>
+            </button>
             <a class="navbar-brand " href="index.html">
                 <!--Logo image-->
                 <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
@@ -19,7 +21,7 @@
             <div class="navbar__container__options order-lg-2  ">
                 <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons" ></i>
                 <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
-                <i class="fa-solid fa-cart-shopping fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+                <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons d-none d-lg-inline-block" ></i>
             </div>
        </div>
        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -178,19 +180,19 @@
     <section class="container  infoSection p-5 " >
       <div class="row text-center infoSection__container  p-5  d-flex flex-wrap justify-content-center ">
         <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-truck fa-2xl "></i></div>
-          <h2 class="infoSection__container__item__title fw-bold m-4 fs-4 ">Livraison gratuite</h2>
-          <h3 class="infoSection__container__item__subTitle fw-light fs-5  ">Livraison gratuite pour les commandes de plus de 130 $</h3>
+          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-truck display-1 text-primary "></i></div>
+          <h2 class="infoSection__container__item__title  m-4 fs-3 fw-semibold 3   ">Livraison gratuite</h2>
+          <h3 class="infoSection__container__item__subTitle fw-lighter fs-5  ">Livraison gratuite pour les commandes de plus de 130 $</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-arrow-right-arrow-left fa-2xl"></i></div>
-          <h2 class="infoSection__container__item__title fw-bold m-4 fs-4  ">Échange</h2>
-          <h3 class="infoSection__container__item__subTitle fw-light fs-5">Sous 30 jours pour un échange</h3>
+          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-arrow-right-arrow-left display-1  text-primary "></i></div>
+          <h2 class="infoSection__container__item__title fw-semibold  m-4 fs-3  ">Échange</h2>
+          <h3 class="infoSection__container__item__subTitle fw-lighter fs-5">Sous 30 jours pour un échange</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-12  infoSection__container__item   mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-phone fa-2xl"></i></div>
-          <h2 class="infoSection__container__item__title fw-bold m-4 fs-4">Support en ligne</h2>
-          <h3 class="infoSection__container__item__subTitle fw-light fs-5">24 heures sur 24, 7 jours sur 7</h3>
+          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-phone display-1   text-primary "></i></div>
+          <h2 class="infoSection__container__item__title fw-semibold  m-4 fs-3">Support en ligne</h2>
+          <h3 class="infoSection__container__item__subTitle fw-lighter fs-5">24 heures sur 24, 7 jours sur 7</h3>
         </div>
       </div>
     </section>
