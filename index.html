@@ -19,7 +19,7 @@
                 <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
             </a>
             <div class="navbar__container__options order-lg-2 p-2 ">
-                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
                 </a>
                 <a href="user.html">
@@ -33,7 +33,6 @@
                   <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons " ></i>
                 </a>
             </div>
-            
             </div>
        </div>
        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -81,8 +80,10 @@
             </a>
           </div>
           <div class="p-1 text-center ">
-            <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
-            <span class="d-block text-secondary">Rechercher</span>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
+              <span class="d-block text-secondary">Rechercher</span>
+            </a>
           </div>
           
         </div>
@@ -90,7 +91,18 @@
     </nav>
     <!--navbar end-->
 
-
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form class="d-flex w-100" role="search">
+              <input class="form-control me-2" type="search" placeholder="Rechercher un produit" aria-label="Search">
+              <button class="btn btn-primary text-secondary " type="submit"> Rechercher</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--hero section debut-->
     <section class="heroSection">
