@@ -19,14 +19,21 @@
                 <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
             </a>
             <div class="navbar__container__options order-lg-2 p-2 ">
-                <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                  <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+                </a>
                 <a href="user.html">
                   <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
                 </a>
                 <a href="cart.html" class="d-inline-block   position-relative navbar__container__options__cart  ">
-                  <span id="cartIcon" class="  bg-dark text-secondary  rounded-circle  fs-6 fw-bolder ">0</span>
+                  <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5">
+                  </span>
+                  <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder ">3</span>
+                  
                   <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons " ></i>
                 </a>
+            </div>
+            
             </div>
        </div>
        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -57,25 +64,25 @@
         </div>
       </div>
     </nav>
-    <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none">
+    <nav class="navbar fixed-bottom navbar-light bg-primary  d-lg-none ">
       <div class="container-fluid  w-100 ">
         <div class="w-100  p-1 d-flex  justify-content-between align-items-center  ">
           <div class="p-1 text-center">
             <a href="user.html" class="text-decoration-none ">
-              <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-dark " ></i>
-              <span class="d-block text-dark">Mon compte</span>
+              <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-secondary " ></i>
+              <span class="d-block text-secondary ">Mon compte</span>
             </a>
           </div>
           
           <div class="p-1 text-center ">
             <a href="shop.html" class="text-decoration-none ">
-              <i class="fa-solid fa-shop fa-xl text-dark"></i>
-              <span class="d-block text-dark">boutique</span>
+              <i class="fa-solid fa-shop fa-xl text-secondary"></i>
+              <span class="d-block text-secondary">boutique</span>
             </a>
           </div>
           <div class="p-1 text-center ">
-            <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-dark " ></i>
-            <span class="d-block text-dark">Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
+            <span class="d-block text-secondary">Rechercher</span>
           </div>
           
         </div>

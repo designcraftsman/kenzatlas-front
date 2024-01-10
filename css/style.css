@@ -17,9 +17,16 @@
   color: #FFFFFF;
   margin: 0 20px;
 }
+.navbar__container__options #cartIconContainer {
+  position: absolute;
+  padding: 12px;
+  bottom: 55%;
+  left: 45%;
+}
 .navbar__container__options #cartIcon {
   position: absolute;
   padding: 2px;
+  letter-spacing: 0;
   bottom: 45%;
   left: 55%;
 }
