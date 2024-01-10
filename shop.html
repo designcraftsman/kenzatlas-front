@@ -55,10 +55,10 @@
     <!--filter and product list section start-->
     <div class="container shop">
       <div class="row shop__container">
-        <div class="  col-3 d-lg-block d-none  p-2  mt-5 shop__container__filterBar   ">
+        <div class="  col-3 d-lg-block d-none  p-2  mt-3 shop__container__filterBar   ">
           <h2 class=" fs-6 fw-semibold mt-4 ">Catégorie</h2>
           <hr class="border-primary border-2">
-          <ul class="list-group list-unstyled mt-2  ">
+          <ul class="list-group list-unstyled mt-2 shop__container__filterBar__list  ">
             <li class="mt-2 text-dark fs-6">
               <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
               Soin cheveux
@@ -94,11 +94,23 @@
           </ul>
           <h2 class=" fs-6 fw-semibold  mt-5 ">Filtrer par prix</h2>
           <hr class="border-primary border-2"> 
-            <div class="w-100 d-flex justify-content-between align-items-center ">
-              <label for="customRange1" class="form-label fs-6">Prix: 50dh - 280dh</label>
-              <button class="btn btn-primary p-1 text-secondary fw-semibold ">Filtrer</button>
+          <div class="shop__container__filterBar__priceRangeContainer">
+            <div class="shop__container__filterBar__priceRangeContainer__values">
+              <div class="shop__container__filterBar__priceRangeContainer__values__value fs-6">
+                Prix : 
+                <input class="shop__container__filterBar__priceRangeContainer__values__value__minInput" type="number" id="fromInput" value="0" min="0" max="500"/>dh
+                -
+                <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInput" value="500" min="0" max="500"/>
+                dh
+              </div>
+              <button class="btn btn-primary text-secondary ">Filtrer</button>
             </div>
-            <input type="range" class="form-range mt-2" id="customRange1">
+            <div class="shop__container__filterBar__priceRangeContainer__sliders mt-4">
+                <input id="fromSlider" type="range" value="0" step="20" min="0" max="500"/>
+                <input id="toSlider" type="range" value="500" step="20" min="0" max="500"/>
+            </div>
+            
+        </div>
         </div>
 
 
@@ -228,7 +240,7 @@
   
   <!--footer end-->
   
-  
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
   </html>
