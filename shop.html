@@ -128,7 +128,75 @@
                 <option value="2">Trier par : prix plus bas</option>
                 <option value="3">Trier par :prix plus haut</option>
               </select>
-              <button class="btn btn-primary text-secondary   w-100 d-lg-none mt-3 fw-bold "><i class="fa-solid fa-sliders"></i> Filter</button>
+              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary text-secondary   w-100 d-lg-none mt-3 fw-bold "><i class="fa-solid fa-sliders"></i> Filter</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Filtrer</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2 class=" fs-6 fw-semibold mt-4 ">Catégorie</h2>
+          <hr class="border-primary border-2">
+          <ul class="list-group list-unstyled mt-2 shop__container__filterBar__list  ">
+            <li class="mt-2 text-dark fs-6">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Soin cheveux
+            </li>
+            <li class="mt-2 text-dark fs-6 ">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Gommage
+            </li>
+            <li class="mt-2 text-dark fs-6">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Savon
+            </li>
+            <li class="mt-2 text-dark fs-6">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Huile
+            </li>
+            <li class="mt-2 text-dark fs-6">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Shampoing
+            </li>
+          </ul>
+          <h2 class=" fs-6 fw-semibold  mt-5 ">État du produit</h2>
+          <hr class="border-primary border-2">
+          <ul class="list-group list-unstyled mt-2  ">
+            <li class="mt-2 text-dark" fs-6>
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              Promotion
+            </li>
+            <li class="mt-2 text-dark fs-6">
+              <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+              En stock
+            </li>
+          </ul>
+          <h2 class=" fs-6 fw-semibold  mt-5 ">Filtrer par prix</h2>
+          <hr class="border-primary border-2"> 
+          <div class="shop__container__filterBar__priceRangeContainer">
+            <div class="shop__container__filterBar__priceRangeContainer__values">
+              <div class="shop__container__filterBar__priceRangeContainer__values__value fs-6">
+                Prix : 
+                <input class="shop__container__filterBar__priceRangeContainer__values__value__minInput" type="number" id="fromInput" value="0" min="0" max="500"/>dh
+                -
+                <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInput" value="500" min="0" max="500"/>
+                dh
+              </div>
+              
+            </div>
+            <div class="shop__container__filterBar__priceRangeContainer__sliders mt-4">
+                <input id="fromSlider" type="range" value="0" step="20" min="0" max="500"/>
+                <input id="toSlider" type="range" value="500" step="20" min="0" max="500"/>
+            </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary text-secondary w-100">Rechercher</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-5 col-md-6 col-12 m-auto    mt-4 shop__container__products__list__item">
               <div class="card border-0  m-auto w-100" >
