@@ -5,6 +5,12 @@
             margin: 0 20px;
         }
         &__options{
+            #cartIcon{
+                position: absolute;
+                padding:2px;
+                bottom: 45%;
+                left: 55%;
+            }
             &__icons{
                 color:$icons;
                 margin: 0 10px;
