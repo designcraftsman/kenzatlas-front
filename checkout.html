@@ -12,21 +12,49 @@
 
 
     <!--navbar debut-->
-    <nav class="navbar navbar-light bg-primary sticky-top   m-0  p-0 ">
-        <div class="container-fluid navbar__container">
-            <i  class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon "></i>
-            <a class="navbar-brand " href="#">
-                <!--Logo image-->
-                <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
-            </a>
-            <div class="navbar__container__options order-lg-2  ">
-                <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons" ></i>
-                <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
-                <i class="fa-solid fa-cart-shopping fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
-            </div>
-            
+    <nav class="navbar navbar-light bg-primary sticky-top    ">
+      <div class="container-fluid navbar__container m-0 p-0">
+        <button class="btn btn-primary m-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+           <i  class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon "></i>
+          </button>
+          <a class="navbar-brand " href="index.html">
+              <!--Logo image-->
+              <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
+          </a>
+          <div class="navbar__container__options order-lg-2  ">
+              <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons" ></i>
+              <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+              <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons d-none d-lg-inline-block" ></i>
+          </div>
+     </div>
+     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header ">
+          <!--Logo image-->
+          <div class="m-auto ">
+            <img src="assets/img/logo/svg_yellow (1).svg" alt=""  width="180" class="d-inline-block align-text-top">
+          </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush  text-center ">
+          <li class="list-group-item mt-2 fs-6 fw-light "><a class="text-decoration-none text-dark" href="index.html">Home</a></li>
+          <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="shop.html">Shop</a></li>
+          <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="blog.html">Blog</a></li>
+          <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="contact.html">Contact</a></li>
+          <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="about.html">About</a></li>
+        </ul>
+        <div class="offcanvas-footer mt-5">
+          <ul class="list-unstyled text-center ">
+            <li class="d-inline m-2 "><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+            <li class="d-inline m-2 "><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+            <li class="d-inline m-2"><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+            <li class="d-inline m-2"><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
+          </ul>
         </div>
-    </nav>
+        <p class="text-center fw-lighter mt-5  ">© 2023 DesignCraftsMan Tous droits réservés.</p>
+      </div>
+    </div>
+  </nav>
     <!--navbar end-->
 
 

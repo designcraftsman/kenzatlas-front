@@ -152,6 +152,11 @@
 .shop {
   font-family: Inter, sans-serif;
 }
+.shop__container__filterBar input[type=number]::-webkit-inner-spin-button,
+.shop__container__filterBar input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  -webkit-appearance: none;
+}
 .shop__container__filterBar__list li {
   color: #6E6E6E;
 }
@@ -195,7 +200,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb:hover {
-  background: red;
+  background: #94863D;
 }
 
 input[type=range]::-webkit-slider-thumb:active {
@@ -209,11 +214,6 @@ input[type=number] {
   height: 30px;
   font-size: 20px;
   border: none;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  opacity: 1;
 }
 
 input[type=range] {
