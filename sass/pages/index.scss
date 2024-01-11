@@ -4,7 +4,7 @@
     font-family: Inter,sans-serif;
     &__container{
         &__carousel{
-            height: 86vh;
+            height: 88vh;
             &__item{
                 position: relative;
                 &__img{
@@ -18,7 +18,7 @@
                     position: absolute;
                     top:28%;
                     left: 11%;
-                    width: 60%;
+                    width: 70%;
                     text-align: start;
                     h3{
                         color:$text-primary;
@@ -38,7 +38,9 @@
 }
 
 
-
+.featuredProducts{
+    font-family: Inter,sans-serif;
+}
 
 
 
