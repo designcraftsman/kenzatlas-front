@@ -38,8 +38,8 @@
             <div class="collapse w-100" id="collapseExample">
               <div class="card card-body bg-primary border-0  ">
                 <form class="row" id="searchForm" onsubmit="filterProducts(event)">
-                  <input id="searchInput" type="text" class="col-9 m-auto rounded border-1   p-2 d-inline " placeholder="Rechercher un produit">
-                  <button type="submit"   class="btn btn-dark m-auto fw-bold btn-lg fs-6  col-2 d text-secondary  d-inline ">Rechercher</button>
+                  <input id="searchInput" type="text" class="col-lg-9 col-md-8 col-12 m-auto rounded border-1   p-2 d-inline " placeholder="Rechercher un produit">
+                  <button type="submit"   class="btn btn-dark m-auto fw-bold btn-lg mt-lg-0 mt-md-0 mt-2 fs-6  col-lg-2 col-md-3 col-12 d text-secondary  d-inline ">Rechercher</button>
                 </form>
             </div>
             </div>
@@ -88,7 +88,7 @@
             </a>
           </div>
           <div class="p-1 text-center ">
-            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
               <span class="d-block text-secondary">Rechercher</span>
             </a>
@@ -256,19 +256,42 @@
             <h3 class="clientReviewSection__container__text__subTitle m-4 fs-3 fw-light ">Ce que nos clients disent de nos produits</h3> 
           </div>
           <div class="col-lg-8 col-12 clientReviewSection__container__screenshots p-5 m-auto ">
-            <div class="row">
-              <div class="col-lg-4 col-12 ">
-                <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="w-100 "  alt="">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-5 col-8 m-auto ">
+                      <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="img-fluid " alt="">
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-5 col-8 m-auto ">
+                      <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="img-fluid " alt="">
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row  ">
+                    <div class="col-lg-5 col-md-5 col-8 m-auto ">
+                      <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="img-fluid " alt="">
+                    </div>
+                   
+                  </div>
+                </div>
               </div>
-              <div class="col-lg-4 d-lg-inline-block  d-none">
-                <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="w-100 "  alt="">
-              </div>
-              <div class="col-lg-4 d-lg-inline-block   d-none ">
-                <img src="assets/img/homePage/clientReviewsSection/screenshot.jpg" class="w-100 "  alt="">
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <span class="clientReviewSection__container__screenshots__arrowLeft"><i class="fa-solid fa-chevron-left fa-2xl clientReviewSection__container__screenshots__arrowLeft__icon"></i></span>
-            <span class="clientReviewSection__container__screenshots__arrowRight"><i class="fa-solid fa-chevron-right fa-2xl clientReviewSection__container__screenshots__arrowRight__icon"></i></span>
           </div>
         </div>
       </div> 

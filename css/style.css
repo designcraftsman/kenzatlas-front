@@ -53,7 +53,7 @@
 .heroSection__container__carousel__item__info {
   display: inline-block;
   position: absolute;
-  top: 32%;
+  top: 28%;
   left: 11%;
   width: 60%;
   text-align: start;
@@ -172,6 +172,11 @@
 }
 .shop__container__filterBar__list li {
   color: #6E6E6E;
+}
+.shop__container__filterBar__priceRangeContainer input[type=number]::-webkit-inner-spin-button,
+.shop__container__filterBar__priceRangeContainer input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  -webkit-appearance: none;
 }
 .shop__container__filterBar__priceRangeContainer__sliders {
   position: relative;
