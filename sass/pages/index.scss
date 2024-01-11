@@ -4,11 +4,11 @@
     font-family: Inter,sans-serif;
     &__container{
         &__carousel{
-            height: 90vh;
+            height: 86vh;
             &__item{
                 position: relative;
                 &__img{
-                    filter: brightness(80%);
+                    filter: brightness(60%);
                     object-fit: cover;
                     width: 100%;
                     height: 100%;

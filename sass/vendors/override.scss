@@ -2,11 +2,18 @@ $primary:$style;
 $secondary : $text-primary;
 $success:$bg2;
 
-.active{
-    border-color: $primary;
-}
 
 
+$carousel-indicator-width:           25px;
+$carousel-indicator-height:          25px;
+
+
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          8px;
+$carousel-indicator-opacity:         .4;
+$carousel-indicator-active-bg:      $style;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity 0.8s ease;
 
 
 
