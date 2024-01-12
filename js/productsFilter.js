@@ -37,3 +37,23 @@ function getCheckedOptions() {
 document.querySelectorAll('.form-check-input').forEach(checkbox => {
   checkbox.addEventListener('change', getCheckedOptions);
 });
+
+
+
+const sliderFrom = document.getElementById('fromSlider');
+const sliderTo = document.getElementById('toSlider');
+const priceFilterBtn = document.getElementById('priceFilterBtn');
+
+priceFilterBtn.addEventListener('click', ($event) => {
+    $event.preventDefault();
+    var products = document.querySelectorAll('.shop__container__products__list__product');
+    products.forEach((product, index) => {
+      const productPrice = product.querySelector('.shop__container__products__list__product__details__price').textContent;
+      const productPriceParse = parseFloa(productPrice);
+      if (productPriceParse >= sliderFrom.value && productPriceParse <= sliderTo.value){
+        product.classList.remove('d-none');
+      } else {
+        product.classList.add('d-none');
+      }
+    });
+});
