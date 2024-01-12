@@ -8,38 +8,30 @@ function getCheckedOptions() {
 
   checkboxes.forEach(checkbox => {
     if (checkbox.checked) {
-      checkedOptions.push(checkbox.value);
+      checkedOptions.push(checkbox.value.trim().toLowerCase());
     }
   });
-  
-  productStates.forEach((productState , index) => {
-    const product = document.querySelectorAll('.shop__container__products__list__product')[index];
-    console.log(productState.textContent);
-
-    if (checkedOptions.includes(productState.textContent) || checkedOptions.length === 0) {
-      product.classList.remove('d-none');
-    }else {
-      product.classList.add('d-none');
-    }
-  });
-
 
   // Iterate over products once
-  productCategories.forEach((productCategorie, index) => {
-    const product = document.querySelectorAll('.shop__container__products__list__product')[index];
+  var products = document.querySelectorAll('.shop__container__products__list__product');
 
-    console.log(productCategorie.textContent);
+  products.forEach((product, index) => {
+    const productState = productStates[index].textContent.trim().toLowerCase();
+    const productCategory = productCategories[index].textContent.trim().toLowerCase();
 
-    // Check if the product category is included in checked options
-    if (checkedOptions.includes(productCategorie.textContent) || checkedOptions.length === 0) {
+    // Check if either state or category is included in checked options or if no checkboxes are selected
+    if (
+      (checkedOptions.includes(productState) || checkedOptions.includes(productCategory) || checkedOptions.length === 0)
+    ) {
       product.classList.remove('d-none');
-    }else {
+    } else {
       product.classList.add('d-none');
     }
   });
 
   console.log('Checked options:', checkedOptions);
 }
+
 
 // Attach the event listener to checkboxes
 document.querySelectorAll('.form-check-input').forEach(checkbox => {
