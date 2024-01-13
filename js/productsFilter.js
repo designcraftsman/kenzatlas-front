@@ -21,7 +21,7 @@ function getCheckedOptions() {
 
     // Check if either state or category is included in checked options or if no checkboxes are selected
     if (
-      (checkedOptions.includes(productState) || checkedOptions.includes(productCategory) || checkedOptions.length === 0)
+      (checkedOptions.includes(productState) && checkedOptions.includes(productCategory) || checkedOptions.length === 0)
     ) {
       product.classList.remove('d-none');
     } else {
@@ -40,20 +40,5 @@ document.querySelectorAll('.form-check-input').forEach(checkbox => {
 
 
 
-const sliderFrom = document.getElementById('fromSlider');
-const sliderTo = document.getElementById('toSlider');
-const priceFilterBtn = document.getElementById('priceFilterBtn');
 
-priceFilterBtn.addEventListener('click', ($event) => {
-    $event.preventDefault();
-    var products = document.querySelectorAll('.shop__container__products__list__product');
-    products.forEach((product, index) => {
-      const productPrice = product.querySelector('.shop__container__products__list__product__details__price').textContent;
-      const productPriceParse = parseFloa(productPrice);
-      if (productPriceParse >= sliderFrom.value && productPriceParse <= sliderTo.value){
-        product.classList.remove('d-none');
-      } else {
-        product.classList.add('d-none');
-      }
-    });
-});
+

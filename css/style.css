@@ -186,6 +186,10 @@
   position: relative;
   min-height: 50px;
 }
+.shop__container__filterBar__priceRangeContainer__sliders #fromSliderMobile {
+  height: 0;
+  z-index: 1;
+}
 .shop__container__filterBar__priceRangeContainer__values {
   position: relative;
   display: flex;

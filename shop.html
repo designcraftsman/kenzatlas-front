@@ -107,7 +107,7 @@
                 <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInput" value="500" min="0" max="500"/>
                 dh
               </div>
-              <button id="btnFI" class="btn btn-primary text-secondary ">Filtrer</button>
+              <button id="priceFilterBtn" class="btn btn-primary text-secondary priceFilterBtn">Filtrer</button>
             </div>
             <div class="shop__container__filterBar__priceRangeContainer__sliders mt-4">
                 <input id="fromSlider" type="range" value="0" step="20" min="0" max="500"/>
@@ -130,12 +130,12 @@
                 <option value="2">Trier par : prix plus bas</option>
                 <option value="3">Trier par :prix plus haut</option>
               </select>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary text-secondary   w-100 d-lg-none mt-3 fw-bold "><i class="fa-solid fa-sliders"></i> Filter</button>
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <button data-bs-toggle="modal" data-bs-target="#productFilterModal" class="btn btn-primary text-secondary   w-100 d-lg-none mt-3 fw-bold "><i class="fa-solid fa-sliders"></i> Filter</button>
+              <div class="modal fade" id="productFilterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Filtrer</h5>
+                      <h5 class="modal-title ">Filtrer</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -182,20 +182,20 @@
             <div class="shop__container__filterBar__priceRangeContainer__values">
               <div class="shop__container__filterBar__priceRangeContainer__values__value fs-6">
                 Prix : 
-                <input class="shop__container__filterBar__priceRangeContainer__values__value__minInput" type="number" id="fromInput" value="0" min="0" max="500"/>dh
+                <input class="shop__container__filterBar__priceRangeContainer__values__value__minInput " type="number" id="fromInputMobile" value="0" min="0" max="500"/>dh
                 -
-                <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInput" value="500" min="0" max="500"/>
+                <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInputMobile" value="500" min="0" max="500"/>
                 dh
               </div>
               
             </div>
             <div class="shop__container__filterBar__priceRangeContainer__sliders mt-4">
-                <input id="fromSlider" type="range" value="0" step="20" min="0" max="500"/>
-                <input id="toSlider" type="range" value="500" step="20" min="0" max="500"/>
+                <input id="fromSliderMobile" type="range" value="0" step="20" min="0" max="500"/>
+                <input id="toSliderMobile" type="range" value="500" step="20" min="0" max="500"/>
             </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" id="priceFilterBtn" class="btn btn-primary text-secondary w-100">Rechercher</button>
+                      <button  type="button" id="priceFilterBtnMobile" class="btn btn-primary text-secondary w-100 priceFilterBtn">Rechercher</button>
                     </div>
                   </div>
                 </div>
@@ -223,7 +223,7 @@
                     <span class="shop__container__products__list__product__details__categorie">gommage</span>
                     <span class="shop__container__products__list__product__details__etat">promotion</span>
                   </div>
-                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">25.00</span>dh</p>
+                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">500.00</span>dh</p>
                   <p class="card-text text-center m-1 title">Gel Douch</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
@@ -237,7 +237,7 @@
                     <span class="shop__container__products__list__product__details__categorie">soin cheveux</span>
                     <span class="shop__container__products__list__product__details__etat">en stock</span>
                   </div>
-                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">25.00</span>dh</p>
+                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">99.00</span>dh</p>
                   <p class="card-text text-center m-1 title">Savon</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
@@ -248,10 +248,10 @@
                 <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__product__img object-fit-cover " alt="...">
                 <div class="card-body">
                   <div class="d-none shop__container__products__list__product__details d-none">
-                    <span class="shop__container__products__list__product__details__categorie">huile</span>
+                    <span class="shop__container__products__list__product__details__categorie">savon</span>
                     <span class="shop__container__products__list__product__details__etat">promotion</span>
                   </div>
-                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">250.00</span>dh</p>
+                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">300.00</span>dh</p>
                   <p class="card-text text-center m-1 title">Parfum</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
@@ -265,7 +265,7 @@
                     <span class="shop__container__products__list__product__details__categorie">shampoing</span>
                     <span class="shop__container__products__list__product__details__etat">en stock</span>
                   </div>
-                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">150.00</span>dh</p>
+                  <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">270.00</span>dh</p>
                   <p class="card-text text-center m-1 title">Shampoing</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
@@ -333,9 +333,10 @@
       </footer>
   
   <!--footer end-->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js" ></script>    
+
   <script src="js/productsFilter.js"></script>
   <script src="js/searchBar.js"></script>
-  <script src="js/priceFilter.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/priceFilter.js"></script> 
   </body>
   </html>

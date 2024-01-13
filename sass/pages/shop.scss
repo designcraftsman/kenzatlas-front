@@ -25,12 +25,17 @@
                 &__sliders{
                     position: relative;
                     min-height: 50px;
+                    #fromSliderMobile {
+                        height: 0;
+                        z-index: 1;
+                      }
                 }
                 &__values{
                     position: relative;
                     display: flex;
                     justify-content: space-between;
                 }
+                
             }
         }
         &__products{

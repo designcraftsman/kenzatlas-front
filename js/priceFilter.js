@@ -74,10 +74,18 @@ function setToggleAccessible(currentTarget) {
   }
 }
 
+
+
 const fromSlider = document.querySelector('#fromSlider');
 const toSlider = document.querySelector('#toSlider');
 const fromInput = document.querySelector('#fromInput');
 const toInput = document.querySelector('#toInput');
+
+const fromSliderMobile = document.querySelector('#fromSliderMobile');
+const toSliderMobile = document.querySelector('#toSliderMobile');
+const fromInputMobile = document.querySelector('#fromInputMobile');
+const toInputMobile = document.querySelector('#toInputMobile');
+
 fillSlider(fromSlider, toSlider, '#C6C6C6', '#94863D', toSlider);
 setToggleAccessible(toSlider);
 
@@ -85,6 +93,53 @@ fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
 toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
 fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
 toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+
+
+fillSlider(fromSliderMobile, toSliderMobile, '#C6C6C6', '#94863D', toSliderMobile);
+setToggleAccessible(toSlider);
+
+fromSliderMobile.oninput = () => controlFromSlider(fromSliderMobile, toSliderMobile, fromInputMobile);
+toSliderMobile.oninput = () => controlToSlider(fromSliderMobile, toSliderMobile, toInputMobile);
+fromInputMobile.oninput = () => controlFromInput(fromSliderMobile, fromInputMobile, toInputMobile, toSliderMobile);
+toInputMobile.oninput = () => controlToInput(toSliderMobile, fromInputMobile, toInputMobile, toSliderMobile);
+
+
+
+
+
+  const priceFilterBtn = document.getElementById('priceFilterBtn');
+
+    priceFilterBtn.addEventListener('click', ($event) => {
+      $event.preventDefault();
+      var products = document.querySelectorAll('.shop__container__products__list__product');
+      products.forEach((product) => {
+        const productPrice = product.querySelector('.shop__container__products__list__product__price').textContent;
+        const productPriceParse = parseFloat(productPrice);
+        if (productPriceParse >= fromSlider.value && productPriceParse <= toSlider.value ){
+          product.classList.remove('d-none');
+        } else {
+          product.classList.add('d-none');
+        }
+      });
+  });
+
+  const priceFilterBtnMobile = document.getElementById('priceFilterBtnMobile');
+ 
+
+  priceFilterBtnMobile.addEventListener('click', ($event) => {
+    var products = document.querySelectorAll('.shop__container__products__list__product');
+    products.forEach((product) => {
+      const productPrice = product.querySelector('.shop__container__products__list__product__price').textContent;
+      const productPriceParse = parseFloat(productPrice);
+      if (productPriceParse >= fromSliderMobile.value && productPriceParse <= toSliderMobile.value ){
+        product.classList.remove('d-none');
+      } else {
+        product.classList.add('d-none');
+      }
+    }); 
+ 
+    
+});
 
 
 //Products search bar fitler
