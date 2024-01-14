@@ -21,7 +21,7 @@ function getCheckedOptions() {
 
     // Check if either state or category is included in checked options or if no checkboxes are selected
     if (
-      (checkedOptions.includes(productState) && checkedOptions.includes(productCategory) || checkedOptions.length === 0)
+      (checkedOptions.includes(productState) || checkedOptions.includes(productCategory) || checkedOptions.length === 0)
     ) {
       product.classList.remove('d-none');
     } else {
@@ -37,6 +37,9 @@ function getCheckedOptions() {
 document.querySelectorAll('.form-check-input').forEach(checkbox => {
   checkbox.addEventListener('change', getCheckedOptions);
 });
+
+
+
 
 
 

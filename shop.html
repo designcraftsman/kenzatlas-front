@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kenzAtlas</title>
+    <title>KenzAtlas-Shop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/searchBar.js"></script>
 </head>
 <body>
     <!--navbar debut-->
-    <nav class="navbar navbar-light bg-primary sticky-top    ">
+    <nav class="navbar navbar-light bg-primary sticky-top  p-0 m-0  ">
       <div class="container-fluid navbar__container m-0 p-0">
-        <button class="btn btn-primary m-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <button class="btn btn-primary m-0 p-0 ps-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
            <i  class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon "></i>
           </button>
           <a class="navbar-brand " href="index.html">
               <!--Logo image-->
               <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
           </a>
-          <div class="navbar__container__options order-lg-2  ">
-              <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons" ></i>
-              
-              <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
-              <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons d-none d-lg-inline-block" ></i>
+          <div class="navbar__container__options order-lg-2 pe-4 ">
+              <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+              </a>
+              <a href="user.html">
+                <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+              </a>
+              <a href="cart.html" class="d-inline-block   position-relative navbar__container__options__cart  ">
+                <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5">
+                </span>
+                <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder ">0</span>
+                
+                <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons " ></i>
+              </a>
           </div>
-     </div>
+        </div>
+          <div class="collapse w-100" id="collapseExample">
+            <div class="card card-body bg-primary border-0  ">
+              <form class="row" id="searchForm" onsubmit="filterProducts(event)">
+                <input id="searchInput" type="text" class="col-lg-9 col-md-8 col-12 m-auto rounded border-1   p-2 d-inline " placeholder="Rechercher un produit">
+                <button type="submit"   class="btn btn-dark m-auto fw-bold btn-lg mt-lg-0 mt-md-0 mt-2 fs-6  col-lg-2 col-md-3 col-12 d text-secondary  d-inline ">Rechercher</button>
+              </form>
+          </div>
+          </div>
      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
       <div class="offcanvas-header ">
           <!--Logo image-->
@@ -51,6 +68,32 @@
           </ul>
         </div>
         <p class="text-center fw-lighter mt-5  ">© 2023 DesignCraftsMan Tous droits réservés.</p>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar fixed-bottom navbar-light bg-primary  d-lg-none ">
+    <div class="container-fluid  w-100 ">
+      <div class="w-100  p-1 d-flex  justify-content-between align-items-center  ">
+        <div class="p-1 text-center">
+          <a href="user.html" class="text-decoration-none ">
+            <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-secondary " ></i>
+            <span class="d-block text-secondary ">Mon compte</span>
+          </a>
+        </div>
+        
+        <div class="p-1 text-center ">
+          <a href="shop.html" class="text-decoration-none ">
+            <i class="fa-solid fa-shop fa-xl text-secondary"></i>
+            <span class="d-block text-secondary">boutique</span>
+          </a>
+        </div>
+        <div class="p-1 text-center ">
+          <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons text-secondary" ></i>
+            <span  class="d-block text-secondary">Rechercher</span>
+          </a>
+        </div>
+        
       </div>
     </div>
   </nav>
@@ -135,7 +178,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title ">Filtrer</h5>
+                      <h5 class="modal-shop__container__products__list__product__title title ">Filtrer</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -210,7 +253,7 @@
                     <span class="shop__container__products__list__product__details__etat">promotion</span>
                   </div>
                   <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">25.00</span>dh</p>
-                  <p class="card-text text-center m-1 title">Gel Douch</p>
+                  <p class="card-text text-center m-1 shop__container__products__list__product__title title">Gel Douch</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
               </div>
@@ -224,7 +267,7 @@
                     <span class="shop__container__products__list__product__details__etat">promotion</span>
                   </div>
                   <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">500.00</span>dh</p>
-                  <p class="card-text text-center m-1 title">Gel Douch</p>
+                  <p class="card-text text-center m-1 shop__container__products__list__product__title title">Gel Douch</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
               </div>
@@ -238,7 +281,7 @@
                     <span class="shop__container__products__list__product__details__etat">en stock</span>
                   </div>
                   <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">99.00</span>dh</p>
-                  <p class="card-text text-center m-1 title">Savon</p>
+                  <p class="card-text text-center m-1 shop__container__products__list__product__title title">Savon</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
               </div>
@@ -252,7 +295,7 @@
                     <span class="shop__container__products__list__product__details__etat">promotion</span>
                   </div>
                   <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">300.00</span>dh</p>
-                  <p class="card-text text-center m-1 title">Parfum</p>
+                  <p class="card-text text-center m-1 shop__container__products__list__product__title title">Parfum</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
               </div>
@@ -266,7 +309,7 @@
                     <span class="shop__container__products__list__product__details__etat">en stock</span>
                   </div>
                   <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">270.00</span>dh</p>
-                  <p class="card-text text-center m-1 title">Shampoing</p>
+                  <p class="card-text text-center m-1 shop__container__products__list__product__title title">Shampoing</p>
                   <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary "></i>  <span>52 Reviews</span></p>
                 </div>
               </div>
