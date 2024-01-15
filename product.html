@@ -108,13 +108,13 @@
             <div class="col-lg-5 col-12 m-auto productPage__container__imgContainer position-relative ">
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active productPage__container__imgContainer__img">
-                    <img src="assets/img/homePage/featuredProducts/product4.jpg" class="object-fit-cover  d-block w-100" alt="...">
+                  <div class="carousel-item active productPage__container__imgContainer__img h-100">
+                    <img src="assets/img/homePage/featuredProducts/product4.jpg " class="object-fit-cover productPage__product__img d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item productPage__container__imgContainer__img">
+                  <div class="carousel-item productPage__container__imgContainer__img h-100">
                     <img src="assets/img/homePage/featuredProducts/product1.jpg" class="object-fit-cover d-block w-100" alt="...">
                   </div>
-                  <div class="carousel-item productPage__container__imgContainer__img">
+                  <div class="carousel-item productPage__container__imgContainer__img h-100">
                     <img src="assets/img/homePage/featuredProducts/product3.jpg" class="object-fit-cover d-block w-100" alt="...">
                   </div>
                 </div>
@@ -128,16 +128,17 @@
                 </button>
               </div>   
             </div>
-            <div class="col-lg-5 col-12  ">
-                <h1 class="fw-bold fs-2 ">Huile pour cheveux</h1>
+            <div class="col-lg-5 col-12  productPage__product">
+                <h1 class="fw-bold fs-2 productPage__product__title">Huile pour cheveux</h1>
+                <p class="fw-normal  fs-3 "><span class="productPage__product__price">64.00</span>dh</p>
                 <p><span class="m-2 ms-0"><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i></span> | <span class="m-2">3 reviews </span></p>
                 <p class="fw-lighter fs-5">Niacinamide and Vitamin C are two anti-aging superstars but not usually formulated together because of their different pH levels.
                 </p>
                 <div class="d-flex justify-content-between align-items-center p-2 ">
-                    <p class="w-50 fs-6">Quantité : <input class="w-50 rounded border-1 text-center fw-bolder " min="1" max="10" value="1" type="number"></input></p>
+                    <p class="w-50 fs-6">Quantité : <input class="w-50 rounded border-1 text-center fw-bolder productPage__product__quantity " min="1" max="10" value="1" type="number"></input></p>
                     <i class="fa-brands fa-square-whatsapp  fa-2xl fs-1  " style="color: #43ce1c;"></i>
                 </div>
-                <button class="btn btn-primary text-secondary w-100 btn-lg fw-bolder ">Ajouter au panier</button>
+                <button id="addProductToCart" class="btn btn-primary text-secondary w-100 btn-lg fw-bolder ">Ajouter au panier</button>
             </div>
         </div>
         <section class="mt-5" >
@@ -273,7 +274,7 @@
   <!--footer end-->
   
   <script src="js/searchBar.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
-
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js" ></script>
+  <script src="js/addToCart.js"></script>
   </body>
   </html>
