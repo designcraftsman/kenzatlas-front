@@ -1,6 +1,7 @@
 let cartProducts = [];
 const addProductToCart = document.getElementById('addProductToCart');
 
+
 document.addEventListener('DOMContentLoaded', function () {
     addProductToCart.addEventListener('click', ($event) => {
         $event.preventDefault();
@@ -8,14 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
         // Selecting the closest product container
         const product = addProductToCart.closest('.productPage__product');
 
+        const productId = product.querySelector('.productPage__product__id').textContent;
         const productTitle = product.querySelector('.productPage__product__title').textContent;
         const productPriceUnparsed = product.querySelector('.productPage__product__price').textContent;
         const productPrice = parseFloat(productPriceUnparsed);
         const firstCarouselImage = document.querySelector('.productPage__container__imgContainer__img img');
+        const productQuantity = document.querySelector('.productPage__product__quantity').value;
         const productImgSrc = firstCarouselImage ? firstCarouselImage.src : '';
+        
 
         let addProduct = document.createElement('div');
         addProduct.classList.add('row', 'mt-3', 'align-items-center', 'cartProducts__product');
+
+        let idCol = document.createElement('span');
+        idCol.classList.add('d-none');
+        idCol.textContent = productId;
+        addProduct.appendChild(idCol);
 
         let imgCol = document.createElement('div');
         imgCol.classList.add('col-lg-1', 'col-2');
@@ -44,23 +53,26 @@ document.addEventListener('DOMContentLoaded', function () {
         quantityInput.type = 'number';
         quantityInput.min = '0';
         quantityInput.max = '10';
-        quantityInput.value = '1';
+        quantityInput.value = productQuantity;
         quantityCol.appendChild(quantityInput);
         addProduct.appendChild(quantityCol);
 
+        cartProducts.push(addProduct);
+
         // Retrieve existing cart state from sessionStorage
         const existingCartProducts = JSON.parse(sessionStorage.getItem('cartProducts')) || [];
-
         // Update cart state with the new product
         existingCartProducts.push({
+            id: productId,
             title: productTitle,
             price: productPrice,
             imgSrc: productImgSrc,
-            quantity: 1 // You may want to get the quantity from the input field
+            quantity: productQuantity 
         });
 
         // Store the updated cart state back in sessionStorage
         sessionStorage.setItem('cartProducts', JSON.stringify(existingCartProducts));
+        localStorage.setItem('cartCount', cartProducts.length);
     });
 });
 
