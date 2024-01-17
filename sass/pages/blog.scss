@@ -28,6 +28,17 @@
             }
         }
         &__aside{
+            &__link{
+                color: $text-secondary;
+                font-weight: lighter;
+                transition: all 300ms;
+                transform-origin: 0% 0%;
+                &:hover{
+                    color:$text-primary;
+                    background-color: $style;
+                    font-weight: bolder;
+                }
+            }
             &__title{
                 animation: reveal-titles 800ms;
                 animation-delay: 600ms; 

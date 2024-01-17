@@ -243,6 +243,17 @@ html {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.blog__container__aside__link {
+  color: #000000;
+  font-weight: lighter;
+  transition: all 300ms;
+  transform-origin: 0% 0%;
+}
+.blog__container__aside__link:hover {
+  color: #FFFFFF;
+  background-color: #94863D;
+  font-weight: bolder;
+}
 .blog__container__aside__title {
   animation: reveal-titles 800ms;
   animation-delay: 600ms;
