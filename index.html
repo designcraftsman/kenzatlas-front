@@ -12,26 +12,24 @@
     <!--navbar debut-->
     <nav class="navbar navbar-light bg-primary sticky-top  p-0 m-0  ">
         <div class="container-fluid navbar__container m-0 p-0">
-          <button class="btn btn-primary m-0 p-0 ps-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-             <i  class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon "></i>
-            </button>
+          <a class=" m-0 p-0 ps-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+             <i  class="fa-solid fa-bars-staggered fa-2xl navbar__container__icon navbar__icon "></i>
+          </a>
             <a class="navbar-brand " href="index.html">
                 <!--Logo image-->
                 <img src="assets/img/logo/svg_white.svg" alt=""  width="180" class="d-inline-block align-text-top">
             </a>
             <div class="navbar__container__options order-lg-2 pe-4 ">
-                <a  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+                <a data-bs-toggle="collapse" href="#collapseExample" type="button" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="fa-solid fa-magnifying-glass fa-xl navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </a>
-                <a href="user.html">
-                  <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block" ></i>
+                <a  type="button" data-bs-toggle="modal" data-bs-target="#login">
+                  <i class="fa-solid fa-user fa-xl navbar__container__options__icons d-none d-lg-inline-block navbar__icon" ></i>
                 </a>
                 <a href="cart.html" class="d-inline-block   position-relative navbar__container__options__cart  ">
-                  <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5">
-                  </span>
-                    <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder "></span>
-                  
-                  <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons " ></i>
+                  <span id="cartIconContainer" class="d-inline-block bg-dark rounded-5"></span>
+                  <span id="cartIcon" class=" text-center   text-secondary  fs-6 fw-bolder "></span>   
+                  <i class="fa-solid fa-cart-shopping fa-xl pointer-event  navbar__container__options__icons navbar__icon " ></i>
                 </a>
             </div>
           </div>
@@ -43,7 +41,7 @@
                 </form>
             </div>
             </div>
-       <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+       <div class="offcanvas offcanvas-start offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header ">
             <!--Logo image-->
             <div class="m-auto ">
@@ -51,20 +49,24 @@
             </div>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <ul class="list-group list-group-flush  text-center ">
-            <li class="list-group-item mt-2 fs-6 fw-light "><a class="text-decoration-none text-dark" href="index.html">Home</a></li>
-            <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="shop.html">Shop</a></li>
-            <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="blog.html">Blog</a></li>
-            <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="contact.html">Contact</a></li>
-            <li class="list-group-item mt-2 fs-6 fw-light"><a class="text-decoration-none text-dark" href="about.html">About</a></li>
-          </ul>
+        <div class="offcanvas-body offcanvasNavbar__nav m-0 p-0 text-center  mt-5">
+          <hr class="m-0 p-0">
+            <a href="index.html" class="d-block  text-decoration-none pt-3 pb-3 fs-6 offcanvasNavbar__nav__link ">Accueil</a>
+            <hr class="m-0 p-0">
+            <a href="shop.html" class="d-block  text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Boutique</a>
+            <hr class="m-0 p-0">
+            <a href="blog.html" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Notre Blog</a>
+            <hr class="m-0 p-0">
+            <a href="contact.html" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">Contactez-Nous</a>
+            <hr class="m-0 p-0">
+            <a href="about.html" class="d-block   text-decoration-none  pt-3 pb-3 fs-6 offcanvasNavbar__nav__link">À propos de KenzAtlas</a>
+            <hr class="m-0 p-0">
           <div class="offcanvas-footer mt-5">
             <ul class="list-unstyled text-center ">
-              <li class="d-inline m-2 "><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-              <li class="d-inline m-2 "><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-              <li class="d-inline m-2"><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
-              <li class="d-inline m-2"><a class="text-decoration-none text-dark" href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
+              <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="#"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+              <li class="d-inline m-2 "><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="#"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+              <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="#"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+              <li class="d-inline m-2"><a class="text-decoration-none offcanvasNavbar__nav__socialLink text-dark" href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
             </ul>
           </div>
           <p class="text-center fw-lighter mt-5  ">© 2023 DesignCraftsMan Tous droits réservés.</p>
@@ -75,7 +77,7 @@
       <div class="container-fluid  w-100 ">
         <div class="w-100  p-1 d-flex  justify-content-between align-items-center  ">
           <div class="p-1 text-center">
-            <a href="user.html" class="text-decoration-none ">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#login"  class="text-decoration-none ">
               <i class="fa-solid fa-user fa-xl navbar__container__options__icons text-secondary " ></i>
               <span class="d-block text-secondary ">Mon compte</span>
             </a>
@@ -100,6 +102,52 @@
     <!--navbar end-->
 
 
+    <!-- login and registration forms start -->
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary ">
+            <div class="logo-container m-auto ">
+              <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
+            </div>
+          </div>
+          <div class="modal-body">
+            <form action="user.html p-5">
+                <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Email" >
+                <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Mot de passe" >
+                <button class="btn btn-primary w-100 m-auto  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Se connecter</button>
+            </form>
+            <p class="text-center fs-6 mt-4">Vous n'avez pas un compte? <a type="button" class="text-primary " data-bs-target="#Register" data-bs-toggle="modal" data-bs-dismiss="modal">Créer un compte.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Register" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary ">
+            <div class="logo-container m-auto ">
+              <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
+            </div>
+          </div>
+          <div class="modal-body">
+            <form action="user.html p-5">
+              <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Nom" >
+              <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Prénom" >
+              <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Email" >
+              <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Mot de passe" >
+              <button class="btn btn-primary w-100 m-auto  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Créer compte</button>
+          </form>
+          <p class="text-center fs-6 mt-4">Vous avez déjà un compte? <a class="text-primary " type="button" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Se connecter</a></p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- login and registration forms end -->
+
     <!--hero section debut-->
     <section class="heroSection">
         <div id="carouselExampleDark" class="carousel carousel-dark slide heroSection__container  " data-bs-ride="carousel">
@@ -112,28 +160,34 @@
               <div class="carousel-item h-100  active heroSection__container__carousel__item" data-bs-interval="10000">
                 <img src="assets/img/homePage/heroSection/heroSection1.jpg"  class="d-block heroSection__container__carousel__item__img " alt="...">
                 <div class=" heroSection__container__carousel__item__info    ">
-                  <h3 class="fs-4 fw-light">ÉLÉMENTS ESSENTIELS</h3>
-                  <h2 class="fs-1  fw-bold mt-3">Une beauté inspirée de la vraie vie</h2>
-                  <p class="fs-6 mt-3">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
-                  <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 ">Acheter Maintenant</button>
+                  <div class="heroSection__container__carousel__item__info__text ">
+                    <h3 class="fs-6 fw-light heroSection__container__carousel__item__info__h3 ">ÉLÉMENTS ESSENTIELS</h3>
+                    <h2 class="fs-1  fw-bold mt-3 heroSection__container__carousel__item__info__h2">Une beauté inspirée de la vraie vie</h2>
+                    <p class="fs-6 mt-3 heroSection__container__carousel__item__info__p ">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                  </div> 
+                  <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn fw-bolder">Acheter Maintenant</button>
                 </div>
               </div>
               <div class="carousel-item  h-100  heroSection__container__carousel__item" data-bs-interval="2000">
                 <img src="assets/img/homePage/heroSection/heroSection2.jpg" class="d-block heroSection__container__carousel__item__img  " alt="...">
-                <div class="heroSection__container__carousel__item__info">
-                    <h3 class="fs-3 fw-light ">ÉLÉMENTS ESSENTIELS</h3>
-                    <h2 class="fs-1">First slide label</h2>
-                    <p class="fs-5">Some representative placeholder content for the first slide.</p>
-                    <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 ">Acheter Maintenant</button>
+                <div class=" heroSection__container__carousel__item__info    ">
+                  <div class="heroSection__container__carousel__item__info__text ">
+                    <h3 class="fs-6 fw-light heroSection__container__carousel__item__info__h3 ">ÉLÉMENTS ESSENTIELS</h3>
+                    <h2 class="fs-1  fw-bold mt-3 heroSection__container__carousel__item__info__h2">Une beauté inspirée de la vraie vie</h2>
+                    <p class="fs-6 mt-3 heroSection__container__carousel__item__info__p ">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                  </div> 
+                  <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn fw-bolder">Acheter Maintenant</button>
                 </div>
               </div> 
               <div class="carousel-item  h-100 heroSection__container__carousel__item">
                 <img src="assets/img/homePage/heroSection/heroSection3.jpg" class="d-block  heroSection__container__carousel__item__img  " alt="...">
-                <div class="heroSection__container__carousel__item__info">
-                    <h3>ÉLÉMENTS ESSENTIELS</h3>
-                    <h2>First slide label</h2>
-                    <p>Some representative placeholder content for the first slide.</p>
-                    <button type="button" class="btn btn-primary btn-lg text-secondary  fs-5 ">Acheter Maintenant</button>
+                <div class=" heroSection__container__carousel__item__info    ">
+                  <div class="heroSection__container__carousel__item__info__text ">
+                    <h3 class="fs-6 fw-light heroSection__container__carousel__item__info__h3 ">ÉLÉMENTS ESSENTIELS</h3>
+                    <h2 class="fs-1  fw-bold mt-3 heroSection__container__carousel__item__info__h2">Une beauté inspirée de la vraie vie</h2>
+                    <p class="fs-6 mt-3 heroSection__container__carousel__item__info__p ">Fabriqués à partir d'ingrédients propres et non toxiques, nos produits sont conçus pour tout le monde.</p>
+                  </div> 
+                  <button type="button" class="btn btn-primary btn-lg text-secondary fs-5 heroSection__container__carousel__item__info__btn fw-bolder">Acheter Maintenant</button>
                 </div>
               </div>
             </div>
@@ -145,10 +199,10 @@
 
     <!--featured products section start -->
     <section class="container featuredProducts mt-5 ">
-      <h2 class="featuredProducts__title fs-1 text-center ">Nos produits vedettes</h2>
-      <h4 class="featuredProducts__subTitle fs-4 fw-lighter text-center  ">Obtenez la peau que vous désirez</h4>
-      <div class="row d-flex justify-content-center align-content-center  mt-5  ">
-        <div class="col-lg-3 col-md-6 col-10 mt-2">
+      <h2 class="featuredProducts__title fs-1 text-center reveal">Nos produits vedettes</h2>
+      <h4 class="featuredProducts__subTitle fs-4 fw-lighter text-center reveal ">Obtenez la peau que vous désirez</h4>
+      <div class="row d-flex justify-content-center align-content-center  mt-5  reveal">
+        <div class="col-lg-3 col-md-6 col-10 mt-2 ">
           <div class="card border-0  m-auto w-100">
             <img src="assets/img/homePage/featuredProducts/product1.jpg" class="img-fluid card-img-top" alt="...">
             <div class="card-body">
@@ -199,19 +253,19 @@
     <section class="container-fluid text-center mt-5 categoriesSection">
       <div class="row categoriesSection__container">
         <div class="col-lg-6 col-12   p-0 categoriesSection__container__item mt-2 mb-4">
-          <img src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100 " alt="">
+          <img src="assets/img/homePage/categoriesSection/haircare.jpg " class="w-100 h-100 reveal" alt="">
           <div class="categoriesSection__container__item__info text-secondary ">
-            <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter   ">Meilleur de</h3>
-            <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder ">SOIN DES <br> CHEVEUX</h2>
-            <button type="button" class="btn btn-primary btn-lg  text-secondary fw-bold  ">Explorer</button>
+            <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter   reveal">Meilleur de</h3>
+            <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder reveal">SOIN DES <br> CHEVEUX</h2>
+            <button type="button" id="exploreHair" class="btn btn-primary btn-lg  text-secondary fw-bold reveal ">Explorer</button>
           </div>
         </div>
         <div class="col-lg-6 col-12  p-0  categoriesSection__container__item mt-5 ">
-          <img src="assets/img/homePage/categoriesSection/skincare2.jpg " class="w-100 h-100" alt="">
+          <img src="assets/img/homePage/categoriesSection/skincare2.jpg " class="w-100 h-100 reveal" alt="">
           <div class="categoriesSection__container__item__info text-secondary ">
-            <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter ">Meilleur de</h3>
-            <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder">SOIN DE <br> LA PEAU</h2>
-            <button type="button" class="btn btn-primary btn-lg text-secondary fw-bold  ">Explorer</button>
+            <h3 class="categoriesSection__container__item__info__h3 fs-2 fw-lighter reveal">Meilleur de</h3>
+            <h2 class="categoriesSection__container__item__info__h2 fs-1 fw-bolder reveal">SOIN DE <br> LA PEAU</h2>
+            <button type="button" id="exploreSkin" class="btn btn-primary btn-lg text-secondary fw-bold  reveal">Explorer</button>
           </div>
         </div>
       </div>
@@ -225,19 +279,19 @@
     <section class="container  infoSection p-5 " >
       <div class="row text-center infoSection__container  p-5  d-flex flex-wrap justify-content-center ">
         <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-truck display-1 text-primary "></i></div>
-          <h2 class="infoSection__container__item__title  m-4 fs-3 fw-semibold 3   ">Livraison gratuite</h2>
-          <h3 class="infoSection__container__item__subTitle fw-lighter fs-5  ">Livraison gratuite pour les commandes de plus de 130 $</h3>
+          <div class="infoSection__container__item__icon m-3 reveal"><i class="fa-solid fa-truck display-1 text-primary "></i></div>
+          <h2 class="infoSection__container__item__title  m-4 fs-3 fw-bold 3  reveal ">Livraison gratuite</h2>
+          <h3 class="infoSection__container__item__subTitle fw-normal fs-5  reveal">Livraison gratuite pour les commandes de plus de 130 $</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-12 infoSection__container__item  mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-arrow-right-arrow-left display-1  text-primary "></i></div>
-          <h2 class="infoSection__container__item__title fw-semibold  m-4 fs-3  ">Échange</h2>
-          <h3 class="infoSection__container__item__subTitle fw-lighter fs-5">Sous 30 jours pour un échange</h3>
+          <div class="infoSection__container__item__icon m-3 reveal"><i class="fa-solid fa-arrow-right-arrow-left display-1  text-primary "></i></div>
+          <h2 class="infoSection__container__item__title fw-bold  m-4 fs-3  reveal">Échange</h2>
+          <h3 class="infoSection__container__item__subTitle fw-normal fs-5 reveal">Sous 30 jours pour un échange</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-12  infoSection__container__item   mt-5 ">
-          <div class="infoSection__container__item__icon m-3 "><i class="fa-solid fa-phone display-1   text-primary "></i></div>
-          <h2 class="infoSection__container__item__title fw-semibold  m-4 fs-3">Support en ligne</h2>
-          <h3 class="infoSection__container__item__subTitle fw-lighter fs-5">24 heures sur 24, 7 jours sur 7</h3>
+          <div class="infoSection__container__item__icon m-3 reveal"><i class="fa-solid fa-phone display-1   text-primary "></i></div>
+          <h2 class="infoSection__container__item__title fw-bold  m-4 fs-3 reveal">Support en ligne</h2>
+          <h3 class="infoSection__container__item__subTitle fw-normal  fs-5 reveal">24 heures sur 24, 7 jours sur 7</h3>
         </div>
       </div>
     </section>
@@ -248,17 +302,17 @@
 
     <!--client Review section start-->
 
-    <section class="clientReviewSection container-fluid bg-primary p-3">
+    <section class="clientReviewSection container-fluid bg-primary p-3 reveal">
       <div class="container  p-2 clientReviewSection">
         <div class="row clientReviewSection__container align-items-center ">
           <div class="col-lg-3  col-12 clientReviewSection__container__text  text-lg-start text-center    ">
-            <div class="clientReviewSection__container__text__icon m-4 "><img src="assets/img/homePage/clientReviewsSection/clientReview.svg" class="w-25 text-secondary " alt=""></div>
-            <h2 class="clientReviewSection__container__text__title m-4 fs-2 fw-bold">Avis client</h2> 
-            <h3 class="clientReviewSection__container__text__subTitle m-4 fs-3 fw-light ">Ce que nos clients disent de nos produits</h3> 
+            <div class="clientReviewSection__container__text__icon m-4 reveal"><img src="assets/img/homePage/clientReviewsSection/clientReview.svg" class="w-25 text-secondary " alt=""></div>
+            <h2 class="clientReviewSection__container__text__title m-4 fs-2 fw-bold reveal">Avis client</h2> 
+            <h3 class="clientReviewSection__container__text__subTitle m-4 fs-3 fw-light reveal">Ce que nos clients disent de nos produits</h3> 
           </div>
           <div class="col-lg-8 col-12 clientReviewSection__container__screenshots p-5 m-auto ">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
+              <div class="carousel-inner ">
                 <div class="carousel-item active" data-bs-interval="10000">
                   <div class="row">
                     <div class="col-lg-5 col-md-5 col-8 m-auto ">
@@ -284,12 +338,12 @@
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
@@ -307,21 +361,21 @@
 
     <section class="container-fluid p-5 blogSection">
       <div class="text-center blogSection__textContainer">
-        <h2 class="blogSection__textContainer__title fs-2 fw-bold">De notre blog</h2>
-        <h3 class="blogSection__textContainer__subTitle fs-3 fw-lighter ">Découvrez nos dernières informations</h3>
+        <h2 class="blogSection__textContainer__title fs-2 fw-bold reveal">De notre blog</h2>
+        <h3 class="blogSection__textContainer__subTitle fs-3 fw-lighter reveal">Découvrez nos dernières informations</h3>
       </div>
-      <div class="row  mt-5">
-        <div class="col-lg-3 col-md-6 col-12 mt-2 blogSection__container m-auto ">
+      <div class="row  mt-5 ">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 blogSection__container m-auto reveal">
           <div class="card border-0 m-auto blogSection__container__item w-100" >
-            <img src="assets/img/homePage/blogSection/article1.jpg" class="card-img-top   object-fit-cover" alt="...">
-            <div class="card-body">
+            <img src="assets/img/homePage/blogSection/article1.jpg" class="card-img-top object-fit-cover" alt="...">
+            <div class="card-body ">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn border-1 border-dark">Go somewhere</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mt-2 m-auto  ">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 m-auto reveal ">
           <div class="card border-0 m-auto blogSection__container__item   w-100" >
             <img src="assets/img/homePage/blogSection/article2.jpg" class="card-img-top  object-fit-cover " alt="...">
             <div class="card-body">
@@ -331,7 +385,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-12 mt-2 m-auto ">
+        <div class="col-lg-3 col-md-6 col-12 mt-2 m-auto reveal">
           <div class="card border-0 m-auto blogSection__container__item w-100" >
             <img src="assets/img/homePage/blogSection/article3.jpg" class="card-img-top object-fit-cover" alt="...">
             <div class="card-body">
@@ -352,7 +406,7 @@
     <footer class="container-fluid  bg-dark "> 
       <div class="container p-5">
         <div class="row text-primary d-flex justify-content-between  ">
-          <div class="col-lg-2 col-md-4 col-12  ">
+          <div class="col-lg-2 col-md-4 col-12  reveal">
             <img src="assets/img/logo/svg_yellow (1).svg"  class="d-block w-100  " alt="">
             <ul class="list-unstyled text-center text-secondary  mt-4 ">
               <li class="d-inline m-2 "><i class="fa-brands fa-facebook fa-lg"></i></li>
@@ -360,7 +414,7 @@
               <li class="d-inline m-2"><i class="fa-brands fa-twitter fa-lg"></i></li>
             </ul>
           </div>
-          <div class="col-lg-2 col-md-4 col-12  text-lg-start text-md-start text-center mt-3 ">
+          <div class="col-lg-2 col-md-4 col-12  text-lg-start text-md-start text-center mt-3 reveal">
             <h4>A propos</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li>Notre histoire</li>
@@ -368,7 +422,7 @@
                 <li>Contact</li>
               </ul>
           </div>
-          <div class="col-lg-2 col-md-4 col-12 col-2 text-lg-start text-md-start text-center mt-3">
+          <div class="col-lg-2 col-md-4 col-12 col-2 text-lg-start text-md-start text-center mt-3 reveal">
             <h4>Aide</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li>FAQ</li>
@@ -382,6 +436,8 @@
       </div>
     </footer>
 
+    <script src="js/explore.js"></script>
+    <script src="js/scrollReveal.js"></script>
     <script src="js/cart.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js" ></script>
     <script src="js/searchBar.js"></script>

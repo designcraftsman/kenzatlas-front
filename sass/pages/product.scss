@@ -1,10 +1,40 @@
 .productPage{
     font-family: Inter, sans-serif;
     &__container{
+        animation: reveal-image 1000ms;
+        animation-delay: 600ms; 
+        animation-fill-mode: both;
         &__imgContainer{
             &__img{
-                height:600px;
+                img{
+                    height: 550px;
+                }
             }
         }
+    }
+    &__product{
+        animation: reveal-product 1000ms;
+        animation-delay: 600ms; 
+        animation-fill-mode: both;
+    }
+}
+
+@keyframes reveal-product {
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-image {
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }100%{
+        transform:translateX(0px);
+        opacity: 1;
     }
 }

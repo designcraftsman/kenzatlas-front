@@ -2,6 +2,9 @@
     font-family: Inter,sans-serif;
     &__container{
         &__posts{
+            animation: reveal-posts 600ms;
+            animation-delay: 600ms; 
+            animation-fill-mode: both;
             &__post{
                 &__img{
                     img{
@@ -25,7 +28,23 @@
             }
         }
         &__aside{
+            &__title{
+                animation: reveal-titles 800ms;
+                animation-delay: 600ms; 
+                animation-fill-mode: both;
+                transform-origin: left;
+            }
+            &__list{
+                animation: reveal-titles 1000ms;
+                animation-delay: 600ms; 
+                animation-fill-mode: both;
+                transform-origin: left;
+            }
             &__recentPosts{
+                animation: reveal-titles 1000ms;
+                animation-delay: 600ms; 
+                animation-fill-mode: both;
+                transform-origin: left;
                 &__img{
                     img{
                         height: 80px;
@@ -41,5 +60,25 @@
                 }
             }
         }
+    }
+}
+
+@keyframes reveal-posts{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-titles {
+    0%{
+        transform: scaleX(0);
+        opacity: 0;
+    }100%{
+        transform:scaleX(1);
+        opacity: 1;
     }
 }

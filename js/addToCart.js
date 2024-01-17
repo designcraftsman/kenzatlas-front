@@ -36,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function updateCartCount(products) {
     const totalCount = products.reduce((sum, product) => sum + parseInt(product.quantity), 0);
     localStorage.setItem('cartCount', totalCount.toString());
-    // Calculate and store the total cost
-    const totalCost = products.reduce((sum, product) => sum + parseInt(product.totalCost), 0);
-    localStorage.setItem('cartTotalCost', totalCost.toString());
+    
 }
 
     

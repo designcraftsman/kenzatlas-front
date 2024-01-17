@@ -4,11 +4,21 @@
     font-family: Inter ,sans-serif;
     &__container{
         &__filterBar{
+            animation: reveal-filter 600ms;
+            animation-delay: 600ms; 
+            transform-origin: left;
+            animation-fill-mode: both;
             input[type=number]::-webkit-inner-spin-button, 
             input[type=number]::-webkit-outer-spin-button {  
                opacity: 1;
                -webkit-appearance: none;
                
+            }
+            &__hr{
+                animation: reveal-hr 1000ms;
+                animation-delay: 600ms; 
+                transform-origin: left;
+                animation-fill-mode: both;
             }
             &__list{
                 li{
@@ -42,18 +52,65 @@
             &__results{
                 &__number{
                     color: $options;
+                    animation: reveal-number 600ms;
+                    animation-delay: 600ms; 
+                    transform-origin: left;
+                    animation-fill-mode: both;
+                }
+                &__select{
+                    animation: reveal-number 600ms;
+                    animation-delay: 600ms; 
+                    transform-origin: left;
+                    animation-fill-mode: both;
                 }
             }
             &__list{
-                &__item{
-                &__img{
-                    height: 450px;
-                }
+                &__product{
+                    animation: reveal-number 1000ms;
+                    animation-delay: 600ms; 
+                    transform-origin: left;
+                    animation-fill-mode: both;
+                    &__img{
+                        height: 450px;
+                    }
             }
             }
         }
     }
 }
+//filter animation
+
+@keyframes reveal-filter {
+    0%{
+        transform: scaleX(0);
+        opacity: 0;
+    }100%{
+        transform:scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-hr {
+    0%{
+        transform: scaleX(0);
+        opacity: 0;
+    }100%{
+        transform:scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-number{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
 
 .hide{
     display: none;
