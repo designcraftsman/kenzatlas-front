@@ -14,13 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Retrieve cart information from localStorage
   const cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
-  const cartRecap = document.querySelector('.cartRecap');
+
   // Dynamically populate the cart container
   const cartContainer = document.querySelector('.cartProducts');
+  const cartRecap = document.querySelector('.cartRecap');
   if (cartProducts.length === 0) {
     const emptyCartMessage = document.createElement('div');
     emptyCartMessage.classList.add('text-center', 'fs-4', 'fw-normal', 'text-muted', 'p-4');
     emptyCartMessage.textContent = 'Votre panier est vide';
+    cartContainer.classList.add('col-lg-12');
+    cartRecap.classList.add('d-none');
     cartContainer.appendChild(emptyCartMessage);
   } else {
     // If cart is not empty, populate the cart items
