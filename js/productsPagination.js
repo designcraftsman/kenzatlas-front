@@ -27,7 +27,7 @@ function displayData() {
   const currentPageData = data.slice(startIndex, endIndex);
   const currentPageHTML = currentPageData.map(product => {
     return `
-      <div class="col-lg-5 col-md-6 col-12 m-auto product mt-4 shop__container__products__list__product">
+      <div class="col-lg-5 col-md-6 col-10 m-auto product mt-4 shop__container__products__list__product">
         <div class="card border-0 m-auto w-100">
           <a href="product.html" class="text-decoration-none text-dark">
             <img src="${product.image}" class="card-img-top shop__container__products__list__product__img object-fit-cover" alt="...">
