@@ -14,10 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Retrieve cart information from localStorage
   const cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
-
+  const cartRecap = document.querySelector('.cartRecap');
   // Dynamically populate the cart container
   const cartContainer = document.querySelector('.cartProducts');
-
+  if (cartProducts.length === 0) {
+    const emptyCartMessage = document.createElement('div');
+    emptyCartMessage.classList.add('text-center', 'fs-4', 'fw-normal', 'text-muted', 'p-4');
+    emptyCartMessage.textContent = 'Votre panier est vide';
+    cartContainer.appendChild(emptyCartMessage);
+  } else {
+    // If cart is not empty, populate the cart items
   cartProducts.forEach((product, index) => {
       // Create and append elements for each product in the cart
       const productElement = document.createElement('div');
@@ -44,8 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
           cartTotalCost.textContent=totalCost.toString();
         }
         updateCartCount(cartProducts);
-      
-        });
+        });}
         function updateCartCount(products) {
           const totalCount = products.reduce((sum, product) => sum + parseInt(product.quantity), 0);
           localStorage.setItem('cartCount', totalCount.toString());
@@ -96,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
           location.reload();
         }
         });
+        
 
 
 
