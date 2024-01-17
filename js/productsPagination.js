@@ -38,7 +38,7 @@ function displayData() {
               </div>
               <p class="card-text text-center m-1 fw-bolder"><span class="shop__container__products__list__product__price">${product.price.toFixed(2)}</span>dh</p>
               <p class="card-text text-center m-1 shop__container__products__list__product__title title">${product.title}</p>
-              <!-- Include other product details as needed -->
+              <p class="card-text text-center m-1"><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs text-primary "></i><i class="fa-solid fa-star fa-xs text-primary m-1"></i><i class="fa-solid fa-star fa-xs m-1 text-primary "></i><i class="fa-solid fa-star m-1 fa-xs text-primary "></i></p>
             </div>
           </a>
         </div>

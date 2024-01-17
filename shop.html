@@ -231,71 +231,72 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <h2 class=" fs-6 fw-semibold mt-4 ">Catégorie</h2>
-          <hr class="border-primary border-2">
-          <ul class="list-group list-unstyled mt-2 shop__container__filterBar__list  ">
-            <li class="mt-2 text-dark fs-6">
-              <input class="form-check-input  me-1" type="checkbox" id="hairCheckbox" value="soin cheveux" >
-              Soin cheveux
-            </li>
-            <li class="mt-2 text-dark fs-6 ">
-              <input class="form-check-input  me-1" type="checkbox" value="gommage" >
-              Gommage
-            </li>
-            <li class="mt-2 text-dark fs-6">
-              <input class="form-check-input me-1" type="checkbox" value="savon" >
-              Savon
-            </li>
-            <li class="mt-2 text-dark fs-6">
-              <input class="form-check-input me-1" type="checkbox" value="huile" >
-              Huile
-            </li>
-            <li class="mt-2 text-dark fs-6">
-              <input class="form-check-input me-1" type="checkbox" value="shampoing" >
-              Shampoing
-            </li>
-          </ul>
-          <h2 class=" fs-6 fw-semibold  mt-5 ">État du produit</h2>
-          <hr class="border-primary border-2">
-          <ul class="list-group list-unstyled mt-2  ">
-            
-            <li class="mt-2 text-dark fs-6" >
-              <input class="form-check-input  me-1" type="checkbox" value="promotion" >
-              Promotion
-            </li>
-            <li class="mt-2 text-dark fs-6">
-              <input class="form-check-input me-1" type="checkbox" value="en stock" >
-              En stock
-            </li>
-          </ul>
-          <h2 class=" fs-6 fw-semibold  mt-5 ">Filtrer par prix</h2>
-          <hr class="border-primary border-2"> 
-          <div class="shop__container__filterBar__priceRangeContainer">
-            <div class="shop__container__filterBar__priceRangeContainer__values">
-              <div class="shop__container__filterBar__priceRangeContainer__values__value fs-6">
-                Prix : 
-                <input class="shop__container__filterBar__priceRangeContainer__values__value__minInput " type="number" id="fromInputMobile" value="0" min="0" max="500"/>dh
-                -
-                <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInputMobile" value="500" min="0" max="500"/>
-                dh
-              </div>
-              
+                                    <h2 class=" fs-6 fw-semibold mt-4 ">Catégorie</h2>
+                        <hr class="border-primary border-2">
+                        <ul class="list-group list-unstyled mt-2 shop__container__filterBar__list  ">
+                          <li class="mt-2 text-dark fs-6">
+                            <input class="form-check-input  me-1" type="checkbox" id="hairCheckbox" value="soin cheveux" >
+                            Soin cheveux
+                          </li>
+                          <li class="mt-2 text-dark fs-6 ">
+                            <input class="form-check-input  me-1" type="checkbox" value="gommage" >
+                            Gommage
+                          </li>
+                          <li class="mt-2 text-dark fs-6">
+                            <input class="form-check-input me-1" type="checkbox" value="savon" >
+                            Savon
+                          </li>
+                          <li class="mt-2 text-dark fs-6">
+                            <input class="form-check-input me-1" type="checkbox" value="huile" >
+                            Huile
+                          </li>
+                          <li class="mt-2 text-dark fs-6">
+                            <input class="form-check-input me-1" type="checkbox" value="shampoing" >
+                            Shampoing
+                          </li>
+                        </ul>
+                        <h2 class=" fs-6 fw-semibold  mt-5 ">État du produit</h2>
+                        <hr class="border-primary border-2">
+                        <ul class="list-group list-unstyled mt-2  ">
+                          
+                          <li class="mt-2 text-dark fs-6" >
+                            <input class="form-check-input  me-1" type="checkbox" value="promotion" >
+                            Promotion
+                          </li>
+                          <li class="mt-2 text-dark fs-6">
+                            <input class="form-check-input me-1" type="checkbox" value="en stock" >
+                            En stock
+                          </li>
+                        </ul>
+                        <h2 class=" fs-6 fw-semibold  mt-5 ">Filtrer par prix</h2>
+                        <hr class="border-primary border-2"> 
+                        <div class="shop__container__filterBar__priceRangeContainer">
+                                    <div class="shop__container__filterBar__priceRangeContainer__values">
+                                      <div class="shop__container__filterBar__priceRangeContainer__values__value fs-6">
+                                        Prix : 
+                                        <input class="shop__container__filterBar__priceRangeContainer__values__value__minInput " type="number" id="fromInputMobile" value="0" min="0" max="500"/>dh
+                                        -
+                                        <input class="shop__container__filterBar__priceRangeContainer__values__value__maxInput" type="number" id="toInputMobile" value="500" min="0" max="500"/>
+                                        dh
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="shop__container__filterBar__priceRangeContainer__sliders mt-4">
+                                        <input id="fromSliderMobile" type="range" value="0" step="20" min="0" max="500"/>
+                                        <input id="toSliderMobile" type="range" value="500" step="20" min="0" max="500"/>
+                                    </div>
+                          </div>
+                                  <div class="modal-footer">
+                                    <button  type="button" id="priceFilterBtnMobile" data-bs-dismiss="modal" class="btn btn-primary text-secondary w-100 priceFilterBtn">Rechercher</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
             </div>
-            <div class="shop__container__filterBar__priceRangeContainer__sliders mt-4">
-                <input id="fromSliderMobile" type="range" value="0" step="20" min="0" max="500"/>
-                <input id="toSliderMobile" type="range" value="500" step="20" min="0" max="500"/>
-            </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button  type="button" id="priceFilterBtnMobile" data-bs-dismiss="modal" class="btn btn-primary text-secondary w-100 priceFilterBtn">Rechercher</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
+          </div>
             <div id="productsContainer" class="row">
-            <div class="col-lg-5 col-md-6 col-12 m-auto product  mt-4 shop__container__products__list__product">
+            <div class="col-lg-5 col-md-6 col-10 m-auto product  mt-4 shop__container__products__list__product">
               <div class="card border-0  m-auto w-100 " >
                 <a href="product.html" class="text-decoration-none text-dark">
                 <img src="assets/img/homePage/featuredProducts/product2.jpg" class=" card-img-top shop__container__products__list__product__img object-fit-cover " alt="...">
@@ -311,7 +312,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-12 m-auto product    mt-4 shop__container__products__list__product">
+            <div class="col-lg-5 col-md-6 col-10 m-auto product    mt-4 shop__container__products__list__product">
               <div class="card border-0  m-auto w-100" >
                 <a href="product.html" class="text-decoration-none text-dark">
                 <img src="assets/img/homePage/featuredProducts/product3.jpg" class="card-img-top shop__container__products__list__product__img object-fit-cover " alt="...">
@@ -327,7 +328,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 m-auto  col-12 mt-4 product   shop__container__products__list__product">
+            <div class="col-lg-5 col-md-6 m-auto  col-10 mt-4 product   shop__container__products__list__product">
               <div class="card border-0  m-auto w-100" >
                 <a href="product.html" class="text-decoration-none text-dark">
                 <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__product__img object-fit-cover " alt="...">
@@ -343,7 +344,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-12 m-auto product   mt-4 shop__container__products__list__product">
+            <div class="col-lg-5 col-md-6 col-10 m-auto product   mt-4 shop__container__products__list__product">
               <div class="card border-0  m-auto w-100" >
                 <a href="product.html" class="text-decoration-none text-dark">
                 <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__product__img object-fit-cover " alt="...">
@@ -359,7 +360,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 m-auto product   col-12 mt-4 shop__container__products__list__product">
+            <div class="col-lg-5 col-md-6 m-auto product   col-10 mt-4 shop__container__products__list__product">
               <div class="card border-0  m-auto w-100" >
                 <a href="product.html" class="text-decoration-none text-dark">
                 <img src="assets/img/homePage/featuredProducts/product1.jpg" class="card-img-top shop__container__products__list__product__img object-fit-cover " alt="...">
@@ -378,6 +379,7 @@
             </div>
             
           </div>
+             <!--pagination start-->
           <div class="container d-flex justify-content-center  p-5">
             <nav aria-label="Page navigation example">
                 <ul class="pagination pagination-lg  " id="pagination">
@@ -385,17 +387,12 @@
                 </ul>
             </nav>
         </div>
+          <!--pagination end-->
         </div>
       </div>
     </div>
     </div>
 
-
-
-    <!--pagination start-->
-
-
-    <!--pagination end-->
 
 
      <!-- footer start-->
