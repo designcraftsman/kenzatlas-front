@@ -1,38 +1,49 @@
 .contactContainer{
     font-family: Inter,sans-serif;
     &__title{
-        animation: reveal-title 500ms;
+        animation: reveal-title 300ms;
         animation-delay: 500ms; 
         animation-fill-mode: both;
     }
     &__box{
-        animation: reveal-box 800ms;
+        animation: reveal-box 500ms;
         animation-delay: 1000ms; 
         animation-fill-mode: both;
     }
-
+    &__image{
+        &__img{
+            animation: reveal-contact-image 500ms;
+            animation-delay: 1000ms; 
+            animation-fill-mode: both;
+        }
+    }
 }
-.contact{
-    background-image: url("../../assets/img/bg/bg.jpg");    
+@keyframes reveal-contact-image{
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
-
 
 @keyframes reveal-title{
     0%{
-        transform: translateY(-100px);
+        transform: translateX(-100px);
         opacity: 0;
     }100%{
-        transform: translateY(0px);
+        transform: translateX(0px);
         opacity: 1;
     }
 }
 
 @keyframes reveal-box{
     0%{
-        transform: translateY(-100px);
+        transform: translateX(-100px);
         opacity: 0;
     }100%{
-        transform: translateY(0px);
+        transform: translateX(0px);
         opacity: 1;
     }
 }
