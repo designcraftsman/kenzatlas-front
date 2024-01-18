@@ -44,7 +44,7 @@ function displayData() {
         <h2 class="fs-3 blog__container__posts__post__text__title m-2">${post.title}</h2>
         <p class="text-body fs-5 fw-light blog__container__posts__post__text__body m-2">${post.body}</p>
         <p class="fw-lighter  fs-6 blog__container__posts__post__text__date m-2">${post.date}</p>
-        <button class="btn  btn-primary text-secondary fw-bold m-2">En savoir plus</button>
+        <button class="btn  btn-primary text-secondary fw-light rounded-0 m-2">En savoir plus</button>
         </div>
     </div>
     </a>

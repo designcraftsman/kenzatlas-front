@@ -83,6 +83,11 @@ function displayData(data, sortingOption) {
   paginationContainer.style.display = totalPages > 1 ? 'flex' : 'none';
 }
 
+const paginationLinks = document.querySelectorAll('.page-link');
+paginationLinks.forEach(link => {
+  link.addEventListener('click', handlePaginationClick);
+});
+
 function generatePaginationHTML(currentPage, totalPages) {
   const maxPagesToShow = 5;
   const paginationArray = [];
@@ -116,22 +121,32 @@ function generatePaginationHTML(currentPage, totalPages) {
   }
 
   return `
-    <li class="page-item"><a class="page-link" href="#" onclick="changePage(${currentPage - 1})"> << </a></li>
-    ${paginationArray.map(page => `
-      <li class="page-item"><a class="page-link" href="#" onclick="changePage(${typeof page === 'number' ? page : currentPage})">${page}</a></li>
-    `).join('')}
-    <li class="page-item"><a class="page-link" href="#" onclick="changePage(${currentPage + 1})"> >> </a></li>
-  `;
+  <li class="page-item"><a class="page-link" href="#" onclick="changePage(${currentPage - 1})"> << </a></li>
+  ${paginationArray.map(page => `
+    <li class="page-item ${page === currentPage ? 'active' : ''}">
+      <a class="page-link" href="#" onclick="handlePaginationClick(event, ${page})">${typeof page === 'number' ? page : '...'}</a>
+    </li>
+  `).join('')}
+  <li class="page-item"><a class="page-link" href="#" onclick="changePage(${currentPage + 1})"> >> </a></li>
+`;
 }
 
 
 function changePage(pageNumber) {
-  if (pageNumber < 1 || pageNumber > Math.ceil(data.length / itemsPerPage) || pageNumber === currentPage) {
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+
+  if (pageNumber < 1 || pageNumber > totalPages || pageNumber === currentPage) {
     return;
   }
+
   currentPage = pageNumber;
-  displayData();
+  displayData(data, sortingDropdown.value);
 }
+
+function handlePaginationClick(event, pageNumber) {
+  event.preventDefault();
+  changePage(pageNumber);
+} 
 
 data = extractAllProductData();
 displayData(data, sortingDropdown.value);
