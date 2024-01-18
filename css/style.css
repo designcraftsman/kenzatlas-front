@@ -26,7 +26,7 @@
 }
 .navbar .offcanvasNavbar__nav__socialLink i {
   transform: scale(1);
-  transition: transform 200ms;
+  transition: transform 300ms;
 }
 .navbar .offcanvasNavbar__nav__socialLink i:hover {
   transform: scale(1.3);
@@ -67,6 +67,25 @@
 .navbar__container__options__icons {
   color: #FFFFFF;
   margin: 0 10px;
+}
+
+.footer-links {
+  color: #FFFFFF;
+  opacity: 0.75;
+  transition: opacity 300ms;
+}
+.footer-links:hover {
+  opacity: 1;
+}
+
+.socialLinks i {
+  transform: scale(1);
+  opacity: 0.75;
+  transition: all 300ms;
+}
+.socialLinks i:hover {
+  opacity: 1;
+  transform: scale(1.3);
 }
 
 html {
@@ -180,6 +199,10 @@ html {
 .ProductsImageContainers .ProductsImages:hover {
   transform: scale(1.05);
   filter: blur(3px);
+}
+
+.terms-conditions {
+  font-family: Inter, sans-serif;
 }
 
 .categoriesSection__container__item {
