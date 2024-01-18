@@ -5,6 +5,9 @@
         animation-delay: 600ms; 
         animation-fill-mode: both;
         &__imgContainer{
+            &__chevrons{
+                color:rgb(99, 95, 95);
+            }
             &__img{
                 img{
                     height: 550px;

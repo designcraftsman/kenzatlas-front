@@ -154,6 +154,34 @@ html {
   font-family: Inter, sans-serif;
 }
 
+.ProductsImageContainers {
+  position: relative;
+}
+.ProductsImageContainers .ProductsImagesBtns {
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  transform: translateY(50px);
+  transition: all 500ms;
+  background-color: #94863D;
+}
+.ProductsImageContainers .ProductsImagesBtns:hover {
+  background-color: #000000;
+}
+.ProductsImageContainers:hover .ProductsImagesBtns {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.ProductsImageContainers .ProductsImages {
+  transform: scale(1);
+  transition: all 500ms;
+}
+.ProductsImageContainers .ProductsImages:hover {
+  transform: scale(1.05);
+  filter: blur(3px);
+}
+
 .categoriesSection__container__item {
   position: relative;
 }
@@ -366,6 +394,34 @@ html {
   height: 450px;
 }
 
+.ProductsImageContainers {
+  position: relative;
+}
+.ProductsImageContainers .ProductsImagesBtnsShop {
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 32%;
+  transform: translateY(50px);
+  transition: all 500ms;
+  background-color: #94863D;
+}
+.ProductsImageContainers .ProductsImagesBtnsShop:hover {
+  background-color: #000000;
+}
+.ProductsImageContainers:hover .ProductsImagesBtnsShop {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.ProductsImageContainers .ProductsImages {
+  transform: scale(1);
+  transition: all 500ms;
+}
+.ProductsImageContainers .ProductsImages:hover {
+  transform: scale(1.05);
+  filter: blur(3px);
+}
+
 @keyframes reveal-filter {
   0% {
     transform: scaleX(0);
@@ -470,6 +526,9 @@ input[type=range] {
   animation: reveal-image 1000ms;
   animation-delay: 600ms;
   animation-fill-mode: both;
+}
+.productPage__container__imgContainer__chevrons {
+  color: rgb(99, 95, 95);
 }
 .productPage__container__imgContainer__img img {
   height: 550px;
@@ -6555,7 +6614,7 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {

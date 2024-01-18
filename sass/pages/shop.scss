@@ -78,6 +78,43 @@
         }
     }
 }
+
+
+
+
+.ProductsImageContainers{
+    position: relative;
+    .ProductsImagesBtnsShop {
+        opacity: 0;
+        position: absolute;
+        top: 80%;
+        left: 32%;
+        transform: translateY(50px);
+        transition: all 500ms;
+        background-color: $style;
+        &:hover{
+            background-color: $text-secondary;
+        }
+    }
+
+    &:hover .ProductsImagesBtnsShop {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .ProductsImages {
+        transform: scale(1);
+        transition: all 500ms;
+        
+        &:hover {
+            transform: scale(1.05);
+            filter: blur(3px);
+        }
+    }
+}
+
+
+
+
 //filter animation
 
 @keyframes reveal-filter {
