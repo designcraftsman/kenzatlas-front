@@ -102,51 +102,57 @@
     <!--navbar end-->
 
 
-    <!-- login and registration forms start -->
-    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header bg-primary ">
-            <div class="logo-container m-auto ">
-              <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
-            </div>
-          </div>
-          <div class="modal-body">
-            <form action="user.html p-5">
-                <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Email" >
-                <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Mot de passe" >
-                <button class="btn btn-primary w-100 m-auto  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Se connecter</button>
-            </form>
-            <p class="text-center fs-6 mt-4">Vous n'avez pas un compte? <a type="button" class="text-primary " data-bs-target="#Register" data-bs-toggle="modal" data-bs-dismiss="modal">Créer un compte.</a></p>
+   <!-- login and registration forms start -->
+   <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary ">
+          <div class="logo-container m-auto ">
+            <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
           </div>
         </div>
-      </div>
-    </div>
-    <div class="modal fade" id="Register" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header bg-primary ">
-            <div class="logo-container m-auto ">
-              <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
-            </div>
-          </div>
-          <div class="modal-body">
-            <form action="user.html p-5">
-              <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Nom" >
-              <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Prénom" >
+        <div class="modal-body">
+          <form action="user.html p-5">
               <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Email" >
               <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Mot de passe" >
-              <button class="btn btn-primary w-100 m-auto  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Créer compte</button>
+              <button class="btn btn-primary w-100 m-auto  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Se connecter</button>
           </form>
-          <p class="text-center fs-6 mt-4">Vous avez déjà un compte? <a class="text-primary " type="button" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Se connecter</a></p>
-        
-          </div>
+          <p class="text-center fs-6 mt-4">Vous n'avez pas un compte? <a type="button" class="text-primary " data-bs-target="#Register" data-bs-toggle="modal" data-bs-dismiss="modal">Créer un compte.</a></p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="modal fade" id="Register" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary ">
+          <div class="logo-container m-auto ">
+            <img src="assets/img/logo/svg_white.svg" alt=""  width="160" class="d-inline-block align-text-top">
+          </div>
+        </div>
+        <div class="modal-body">
+          <form action="user.html p-5">
+            <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Nom" >
+            <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Prénom" >
+            <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3 rounded form-control  " placeholder="Email" >
+            <input type="text" class="p-2 w-100 m-auto mt-3 fs-5 border-3  rounded  form-control " placeholder="Mot de passe" >
+            <div class="form-check mt-3 fs-6 ms-1">
+              <input class="form-check-input " type="checkbox" value="" id="flexCheckChecked" >
+              <label class="form-check-label " for="flexCheckChecked">
+                J'ai lu et j'accepte <a href="terms-conditions.html"> les termes et les conditions d'utulisations</a>.
+              </label>
+            </div>
+            <button class="btn btn-primary w-100 m-auto  mt-3 text-secondary fs-5 border-0 rounded fw-bolder ">Créer compte</button>
+        </form>
+        <p class="text-center fs-6 mt-4">Vous avez déjà un compte? <a class="text-primary " type="button" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Se connecter</a></p>
+      
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- login and registration forms end -->
+  <!-- login and registration forms end -->
 
     <div class="container   contactContainer mb-5 ">
       <div class="row p-5 align-items-center ">
@@ -196,7 +202,7 @@
     <footer class="container-fluid  bg-dark pb-lg-0 pb-5"> 
       <div class="container p-5">
         <div class="row text-primary d-flex justify-content-between align-items-center  ">
-          <div class="col-lg-3 col-md-4 col-12  reveal">
+          <div class="col-lg-3 col-md-4 col-12  ">
             <img src="assets/img/logo/svg_yellow (1).svg"  class="d-block w-100  " alt="">
             <ul class="list-unstyled text-center text-secondary  mt-4 ">
               <li class="d-inline m-2 "><a class="text-decoration-none socialLinks text-secondary " href="#"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
@@ -205,14 +211,14 @@
               <li class="d-inline m-2"><a class="text-decoration-none socialLinks text-secondary " href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-4 col-12  text-lg-start text-md-start text-center mt-3 reveal">
+          <div class="col-lg-3 col-md-4 col-12  text-lg-start text-md-start text-center mt-3 ">
             <h4>A propos</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li class="fs-6"><a href="about.html" class="text-decoration-none   footer-links">Notre histoire</a></li>
                 <li class="fs-6"><a href="contact.html " class="text-decoration-none  footer-links">Contact</a></li>
               </ul>
           </div>
-          <div class="col-lg-3 col-md-4 col-12 col-2 text-lg-start text-md-start text-center mt-3 reveal">
+          <div class="col-lg-3 col-md-4 col-12 col-2 text-lg-start text-md-start text-center mt-3 ">
             <h4>Aide</h3>
               <ul class="list-unstyled text-secondary  ">
                 <li class="fs-6"><a href="terms-conditions.html" class="text-decoration-none    footer-links">Termes & conditions</a></li>
@@ -224,10 +230,10 @@
         <p class="text-center text-secondary fs-6 opacity-75 ">© 2023 DesignCraftsMan Tous droits réservés.</p>
       </div>
     </footer>
-  
-  <!--footer end-->
-  <script src="js/scrollReveal.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+
+    <script src="js/explore.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/searchBar.js"></script></body>
   </html>
